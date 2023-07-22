@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miu Beer 喵啤 | 精釀啤酒 | 經典傳奇</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/booking.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- 漢堡旁的文字 -->
+                <div class="btn-open">
+                    <span>Menu</span>
+                </div>
+            </label>
+            <div class="menu-list">
+                <div class="menu-logo">
+                    <a href="index.html" target="_blank">
+                        <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">關於品牌</a>
+                    </li>
+                    <li>
+                        <a href="#">美味料理</a>
+                    </li>
+                    <li>
+                        <a href="#">啤酒介紹</a>
+                    </li>
+                    <li>
+                        <a href="./takeout.html">我要外帶</a>
+                    </li>
+
+                    <li>
+                        <a href="./news.html">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="location.html">美味據點</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 漢堡選單結束 -->
+    <!-- 立即訂位開始 -->
+    <div class="booking-btn">
+        <a href="./booking.html">
+            <img src="./images/booking_sau.png" alt="立即訂位">
+            立即訂位
+        </a>
+    </div>
+    <!-- 立即訂位結束 -->
+    <!-- 頂端logo與購物車開始 -->
+    <div class="top">
+        <a href="index.html">
+            <img class="logo" src="./images/miu_logo_gold.svg" alt="Miu Beer">
+        </a>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <img src="./images/shoppingcart.svg" alt="購物車">
+            </a>
+        </div>
+        <!-- 頂端logo與購物車結束 -->
+        <!-- 地址表單區 -->
+        <article>
+            <h1>RESERVATION</h1>
+            <section class="miuking">
+                <div class="txt">
+                    <h2>
+                        MIU BEER 貓皇店
+                    </h2>
+                    <address>
+                        貓咪市貓皇區喵喵路66號6樓
+                    </address>
+                    <div class="pic">
+                        <img src="./images/address_king.jpg" alt="喵皇店">
+                    </div>
+                </div>
+            </section>
+            <section class="miuqueen">
+                <div class="txt">
+                    <h2>
+                        MIU BEER 貓后店
+                    </h2>
+                    <address>
+                        貓咪市貓后區小喵路6號6樓
+                    </address>
+                    <div class="pic">
+                        <img src="./images/address_queen.jpg" alt="喵后店">
+                    </div>
+                </div>
+            </section>
+            <form action="#" target="_self">
+                <div>
+                    <label for="name" required>
+                        訂位姓名:
+                        <input type="text" id="name">
+                    </label>
+                </div>
+                <div>
+                    <label for="tel" required>
+                        手機號碼:
+                        <input type="tel" id="tel">
+                    </label>
+                </div>
+                <div>
+                    <label for="purpose" required>
+                        用餐目的:
+                        <select name="purpose" id="purpose">
+                            <option value="">請選擇目的</option>
+                            <option value="">朋友聚會</option>
+                            <option value="">慶生</option>
+                            <option value="">約會</option>
+                            <option value="">結婚紀念</option>
+                            <option value="">其他</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="date" required>
+                        預約日期:
+                        <input type="date" id="date">
+                    </label>
+                </div>
+                <div>
+                    <label for="time" required>
+                        預約時間:
+                        <input type="time" id="time">
+                    </label>
+                </div>
+                <div>
+                    <label for="shop" required>
+                        預定據點:
+                        <select name="shop" id="shop">
+                            <option value="">請選擇地點</option>
+                            <option value="">喵皇區|貓皇店</option>
+                            <option value="">喵后區|喵后店</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="msg">其他備註:
+                        <textarea name="msg" id="msg" cols="30" rows="10"
+                            placeholder="有任何需求嗎?可以先寫在這裡哦! (例如:行動不便、過敏)"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button>確認提交</button>
+                </div>
+            </form>
+        </article>
+        <!-- 地址表單區結束 -->
+        <!-- footer開始 -->
+        <footer>
+            <div class="footer-pic">
+                <a href="index.html" target="_blank">
+                    <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+                </a>
+            </div>
+            <div class="footer txt">
+                <ul>
+                    <li>
+                        <a href="#">美味料理</a>
+                    </li>
+                    <li>
+                        <a href="./takeout.html">我要外帶</a>
+                    </li>
+                    <li>
+                        <a href="#">啤酒介紹</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="#">關於品牌</a>
+                    </li>
+                    <li>
+                        <a href="location.html">美味據點</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-icon">
+                <ul>
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fa-brands fa-facebook" ;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="instagram">
+                            <i class="fa-brands fa-instagram" ;"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span>追蹤我們，掌握最新消息</span>
+            </div>
+        </footer>
+        <div class="warning-box">
+            <div class="warning-box-txt">
+                <p class="drink"><span>禁止</span>酒駕 未滿十八歲 禁止飲酒</p>
+                <p class="tibame">本網站為緯育TibaMe前端工程師班第85期學員專題作品，本平台僅供學習、展示之用。參考網站: 柏克金/台灣啤酒/百事可樂</p>
+            </div>
+        </div>
+        <!-- footer結束 -->
+</body>
+
+</html>
