@@ -351,9 +351,9 @@ text-shadow: 3px 3px 10px #000;
 }
 
 .draft-beer-pic img{
-width: 260px;
-height: 150px;
-display: block;
+    width: 260px;
+    height: 150px;
+    display: block;
 }
 
 .draft-beer-txt h2{

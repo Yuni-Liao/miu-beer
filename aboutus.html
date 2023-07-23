@@ -13,6 +13,72 @@
 </head>
 
 <body>
+    <header>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- 漢堡旁的文字 -->
+                <div class="btn-open">
+                    <span>Menu</span>
+                </div>
+            </label>
+            <div class="menu-list">
+                <div class="menu-logo">
+                    <a href="index.html" target="_blank">
+                        <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./aboutus.html">關於品牌</a>
+                    </li>
+                    <li>
+                        <a href="./food.html">美味料理</a>
+                    </li>
+                    <li>
+                        <a href="./classic-beer.html">啤酒介紹</a>
+                    </li>
+                    <li>
+                        <a href="./takeout.html">我要外帶</a>
+                    </li>
+
+                    <li>
+                        <a href="./news.html">最新消息</a>
+                    </li>
+                    <li>
+                        <a href="location.html">美味據點</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 漢堡選單結束 -->
+    <!-- 立即訂位開始 -->
+    <div class="booking-btn">
+        <a href="./booking.html">
+            <img src="./images/booking_sau.png" alt="立即訂位">
+            立即訂位
+        </a>
+    </div>
+    <!-- 立即訂位結束 -->
+    <!-- 頂端logo與購物車開始 -->
+    <div class="top">
+        <a href="index.html">
+            <img class="logo" src="./images/miu_logo_gold.svg" alt="Miu Beer">
+        </a>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <img src="./images/shoppingcart.svg" alt="購物車">
+            </a>
+        </div>
+    </div>
+    <!-- 頂端logo與購物車結束 -->
     <!-- 上半部 -->
     <section class="container">
         <div class="slogn">
@@ -32,7 +98,9 @@
                     及最經典且新鮮的德式啤酒，讓我們陪伴你度過每個人生的重要時刻！Prost！
                 </p>
             </div>
-
+            <div class="pic bar">
+                <video src="./images/movie03.mp4" autoplay loop muted width="500px" height="400px"></video>
+            </div>
             <div class="pic bar">
                 <img src="./images/about_beer.png" alt="啤酒拉吧機">
             </div>
@@ -70,6 +138,114 @@
             </div>
         </div>
     </section>
+    <!-- 中間大圖區 -->
+    <div class="center-pic">
+        <div class="beer">
+            <img src="./images/about_bottle.png" alt="倒啤酒">
+            <div class="bubbles">
+                <img src="./images/about_center.png" alt="啤酒氣泡">
+                <div class="center-txt">
+                    <h3>MIU BEER</h3>
+                    <img src="./images/aboutus_beer cup.png" alt="小啤酒圖標">
+                    <p>
+                        歐式風格料理，從開胃菜、主菜到甜點，皆以啤酒為中心。每道佳餚都適合搭配啤酒更同享用，顛覆想像的創新滋味；店內還有貓咪店長 Miu 巡店，喜歡擼貓的你，快一起加入吧！
+                        <a href="./food.html">詳見菜單</a>
+                        <a href="./location.html">服務據點</a>
+                    </p>
+                </div>
+                <div class="bbq">
+                    <div class="center-txt">
+                        <h3>MIU BBQ</h3>
+                        <img src="./images/aboutus_beer cup.png" alt="小啤酒圖標">
+                        <p>
+                            嚴選超過40種肉類、海鮮與蔬菜食材，讓您在烤盤上排列組合迸出各式美味。有別於傳統日式燒肉，不論是裝潢風格或是特色餐點皆融合異國風情，並研發獨家私藏餐點，給予你一場舌尖上的饗宴。
+                            <a href="./food.html">詳見菜單</a>
+                            <a href="./location.html">服務據點</a>
+                        </p>
+                    </div>
+                    <img src="./images/about_bbq.png" alt="烤肉拼盤">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 下半部Our story -->
+    <input type="radio" id="switch" name="pic">
+    <input type="radio" id="switch-two" name="pic">
+    <div class="story-wrap">
+        <h2>OUR STORY</h2>
+        <div class="pic">
+            <img class="staff" src="./images/about_story.png" alt="職人精神">
+            <img class=cat src="./images/about_stories.png" alt="傳奇精釀">
+        </div>
+        <div class="circle">
+            <label for="switch">
+                <ul>
+                    <li class="btn">
+                        <span>2022</span>
+                    </li>
+                </ul>
+            </label>
+            <label for="switch-two">
+                <ul>
+                    <li class="btn">
+                        <span>2023</span>
+                    </li>
+                </ul>
+            </label>
+        </div>
+    </div>
+    <!-- footer開始 -->
+    <footer>
+        <div class="footer-pic">
+            <a href="index.html" target="_blank">
+                <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+            </a>
+        </div>
+        <div class="footer txt">
+            <ul>
+                <li>
+                    <a href="./food.html">美味料理</a>
+                </li>
+                <li>
+                    <a href="./takeout.html">我要外帶</a>
+                </li>
+                <li>
+                    <a href="./classic-beer.html">啤酒介紹</a>
+                </li>
+                <li>
+                    <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                    <a href="./aboutus.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="location.html">美味據點</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-icon">
+            <ul>
+                <li>
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook" ;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="instagram">
+                        <i class="fa-brands fa-instagram" ;"></i>
+                    </a>
+                </li>
+            </ul>
+            <span>追蹤我們，掌握最新消息</span>
+        </div>
+    </footer>
+    <div class="warning-box">
+        <div class="warning-box-txt">
+            <p class="drink"><span>禁止</span>酒駕 未滿十八歲 禁止飲酒</p>
+            <p class="tibame">本網站為緯育TibaMe前端工程師班第85期學員專題作品，本平台僅供學習、展示之用。參考網站: 柏克金/台灣啤酒/百事可樂</p>
+        </div>
+    </div>
+    <!-- footer結束 -->
 </body>
 
 </html>
