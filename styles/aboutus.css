@@ -1,0 +1,101 @@
+.body,html{
+    background-image: url(../images/web_bg.jpg);
+    height: 100%;
+    position: relative;
+}
+
+/* 上半部開始 */
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.container .slogn{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .slogn .bar{
+    align-self: center;
+}
+
+.container .slogn .bar img{
+    border-radius: 10px;
+}
+
+.container .slogn .txt h1{
+    width: 300px;
+    font-size: 28px;
+    color: #fff;
+    line-height: 2;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    margin: 20px;
+}
+
+.container .slogn .txt p{
+    width: 300px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px;
+}
+/* 右側文字描述 */
+.content .description{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content .description .side-txt{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.content .description .side-txt .txt h2{
+    width: 300px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 2;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    margin: 20px;
+    text-align: right;
+}
+
+.content .description .side-txt .txt p{
+    width: 300px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: right;
+}
+.content .description .side-txt img{
+    border-radius: 10px;
+}
+.content .description .side-txt .flower{
+    align-self: flex-start;
+}
+.content .description .side-txt .cat{
+    align-self: flex-end;
+}
+
+/* 左側圖片區 */
+.content .side-pic{
+    width: 600px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .side-pic img{
+    border-radius: 10px;
+}
+
+.content .side-pic .cat{
+    margin: 150px 0;
+    align-self: flex-end;
+}

@@ -449,7 +449,7 @@ x
     left: 0;
     padding: 10px 0 30px;
     opacity: 0;
-    transition: 2s;
+    transition: s;
 }
 
 .menu-box .menu .pageone img,
