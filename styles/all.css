@@ -1,11 +1,12 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Raleway:wght@400&display=swap');
 
 .body,html{
     background-image: url(../images/web_bg.jpg);
     height: 100%;
     position: relative;
-    
+    font-family: "Noto Sans TC",Raleway,sans-serif,'Times New Roman', Times, serif;
+    font-style: normal;
 }
 
 /* 漢堡選單開始 */
@@ -23,7 +24,7 @@
 
 .burger-container .btn-open{
     position: relative;
-    right: 40px;
+    right: 45px;
     top: -30px;
     color: #fff;
     z-index: 1;
@@ -165,6 +166,7 @@ header .menu-list .menu-logo{
     left: 10px;
     width: 200px;
     height: 100px;
+    z-index: 1;
     }
 
 .top .shopping-cart{
@@ -173,6 +175,29 @@ header .menu-list .menu-logo{
     top:5%;
     }
     /* 頂端logo與購物車結束 */
+
+/* 跑馬燈開始 */
+.marquee{
+    height: 30px;
+    background-color: #fff;
+    opacity: .6;
+    text-align: center;
+    line-height: 30px;
+}
+
+.marquee p{
+    animation: marquee 20s -1s infinite linear;
+}
+
+@keyframes marquee {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/* 跑馬燈結束 */
 
 /* footer開始 */
 footer {
@@ -186,15 +211,15 @@ footer {
     background-image: url(../images/footer.svg);
     display: flex;
     justify-content: space-evenly;
-    font-family: Microsoft JhengHei;
 }
+
 .footer-pic img {
     width: 170px;
     bottom: 0px;
+    padding-top:10px;
     top: 10px;
-    position: absolute;
+    left: 5%;
     display: block;
-    margin-right: 50px;
 }
 
 .footer a {
@@ -204,15 +229,10 @@ footer {
     line-height: 100px;
     margin: 0px 20px;
     font-size: 20px;
-    font-style: normal;
 }
 
 .footer ul li {
     display: inline;
-}
-
-.footer ul li:nth-child(1) {
-    margin-left: 60px;
 }
 
 .footer-icon {
@@ -226,11 +246,7 @@ footer {
 
 .footer-icon span {
     color: #fff;
-    font-family: Microsoft JhengHei;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     position: absolute;
     right: 85px;
     bottom: 120px;
@@ -284,18 +300,15 @@ footer {
 }
 
 .warning-box .drink span {
-    color: fff;
+    color: #fff;
     font-weight: bolder;
 }
 
-.footer a:hover {
+.footer a:hover,
+.footer-icon a:hover{
     color: #b28850;
 }
 
 .footer-icon a {
     color: #fff;
-}
-
-.footer-icon a:hover {
-    color: #b28850;
 }

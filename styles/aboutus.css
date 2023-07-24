@@ -73,12 +73,30 @@
 }
 .content .description .side-txt .flower{
     align-self: flex-start;
+    animation: up 3s linear infinite alternate;
 }
 .content .description .side-txt .cat{
     align-self: flex-end;
     margin-top: 50px;
+    animation: down 3s linear infinite alternate;
+}
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-70px);
+    }
 }
 
+@keyframes down{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(70px);
+    }
+}
 /* 左側圖片區 */
 .content .side-pic{
     width: 600px;
@@ -89,13 +107,23 @@
 
 .content .side-pic img{
     border-radius: 10px;
+    animation: move 3s linear infinite alternate;
 }
 
 .content .side-pic .cat{
     margin: 150px 0;
     align-self: flex-end;
+    animation: down 3s linear infinite alternate;
 }
 
+@keyframes move{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(70px);
+    }
+}
 /* 中間大圖區 */
 .center-pic{
     width: 100%;
@@ -165,15 +193,16 @@
     text-align: center;
     text-decoration: none;
     padding: 5px;
-    border: 2px solid #b28850;
+    background-color: #b28850;
     border-radius: 5px;
-    color:#b28850
+    color:#333;
+    box-shadow: 3px 3px 10px #000;
 }
 
 .center-pic .beer .bubbles .center-txt img,
 .center-pic .beer .bbq .center-txt img{
     width: 70px;
-    margin:0 50px;
+    margin: 0 50px;
 }
 
 /* 烤肉上方文字 */
@@ -210,9 +239,10 @@
     text-align: center;
     text-decoration: none;
     padding: 5px;
-    border: 2px solid #b28850;
+    background-color: #b28850;
     border-radius: 5px;
-    color:#b28850
+    color:#333;
+    box-shadow: 3px 3px 10px #000;
 }
 
 /* 下半部Our story */
@@ -256,7 +286,6 @@ justify-content: center;
     position: relative;
 }
 
-
 .story-wrap .circle .btn span{
     text-decoration: none;
     color: #000;
@@ -277,7 +306,7 @@ justify-content: center;
     display: block;
 }
 
-#switch-two:checked ~  .story-wrap .cat{
+#switch-two:checked ~  .story-wrap .staffoneman{
     display: block;
 }
 
@@ -285,7 +314,7 @@ justify-content: center;
     display: none;
 }
 
-#switch-two:checked ~  .story-wrap .cat{
+#switch-two:checked ~  .story-wrap .staffoneman{
     display: block;
 }
 
@@ -293,130 +322,6 @@ justify-content: center;
     display: none;
 }
 
-.story-wrap .cat{
+.story-wrap .staffoneman{
     display: none;
-}
-
-/* footer開始 */
-footer {
-    background-size: cover;
-    box-sizing: border-box;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 175px;
-    background-image: url(../images/footer.svg);
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer-pic img {
-    width: 170px;
-    bottom: 0px;
-    top: 10px;
-    position: absolute;
-    display: block;
-    margin-right: 50px;
-}
-
-.footer a {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    line-height: 100px;
-    margin: 0px 20px;
-    font-size: 20px;
-    font-style: normal;
-}
-
-.footer ul li {
-    display: inline;
-}
-
-.footer ul li:nth-child(1) {
-    margin-left: 60px;
-}
-
-.footer-icon {
-    width: 300px;
-    margin: 10px 0;
-    position: relative;
-    top: 20px;
-    bottom: 20px;
-    left: 20px;
-}
-
-.footer-icon span {
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: absolute;
-    right: 85px;
-    bottom: 120px;
-}
-
-.footer-icon .facebook {
-    position: relative;
-    bottom: 5px;
-    font-size: 25px;
-}
-
-.footer-icon .instagram {
-    position: relative;
-    top: 10px;
-    font-size: 25px;
-}
-
-.warning-box {
-    width: 100%;
-    height: 75px;
-    bottom: 0;
-    position: fixed;
-    background-image: url(../images/footerbeer.svg);
-    background-size: cover;
-}
-
-.warning-box-txt {
-    width: 100%;
-    position: relative;
-    text-align: center;
-}
-
-.warning-box p {
-    color: #eee;
-    position: absolute;
-    top: 20px;
-}
-
-.warning-box .tibame {
-    width: 300px;
-    right: 10px;
-    top: 5px;
-    bottom: 5px;
-    line-height: 1.5;
-}
-
-.warning-box .drink {
-    font-size: 50px;
-    left: 15%;
-    right: 15%;
-}
-
-.warning-box .drink span {
-    color: fff;
-    font-weight: bolder;
-}
-
-.footer a:hover {
-    color: #b28850;
-}
-
-.footer-icon a {
-    color: #fff;
-}
-
-.footer-icon a:hover {
-    color: #b28850;
 }

@@ -8,7 +8,6 @@ article{
 article h1{
     color: #FFF;
     font-size: 100px;
-    font-weight:bloder;
     letter-spacing: 5px;
     text-align: center;
     margin: 50px 0 ;
@@ -42,7 +41,7 @@ article h1{
 .miuking .txt h2,
 .miuqueen .txt h2{
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
     display: inline;
     text-shadow: 3px 3px 10px #000;
@@ -55,8 +54,7 @@ article h1{
 
 .miuking .txt address,
 .miuqueen .txt address{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 1px;
     margin: 5px 10px;

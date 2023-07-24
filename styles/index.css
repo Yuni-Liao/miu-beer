@@ -30,8 +30,6 @@
 .top .top-banner-txt{
 color: #fff;
 font-size: 48px;
-font-style: normal;
-font-weight: bold;
 letter-spacing: 4.8px;
 text-align:right;
 position: absolute;
@@ -54,8 +52,6 @@ text-shadow: 3px 3px 10px #b28850;
 .center-banner .center-banner-txt{
 color: #FFF;
 font-size: 48px;
-font-style: normal;
-font-weight: bold;
 line-height: 189.023%; /* 90.731px */
 letter-spacing: 50px;
 writing-mode: vertical-lr;
@@ -78,7 +74,6 @@ text-shadow: 3px 3px 10px #000;
     margin: 50px 0;
     text-align: center;
     font-size: 28px;
-    font-weight: bold;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
@@ -196,7 +191,6 @@ text-shadow: 3px 3px 10px #000;
 }
 
 .draft-beer-txt h2{
-    font-weight: bold;
     font-size: 18px;
     position: absolute;
     top: 45%;
@@ -223,7 +217,6 @@ text-shadow: 3px 3px 10px #000;
     margin: 50px 0;
     text-align: center;
     font-size: 28px;
-    font-weight: bold;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
@@ -323,81 +316,75 @@ text-shadow: 3px 3px 10px #000;
     /* 食物卡片區按鈕結束 */
 
     /* 底部知識區開始 */
-    article{
-        width: 55%;
-        margin: auto;
-    }
-    article h2{
-        width: 100%;
-        color: #B28850;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 28px;
-        font-weight: bold;
-        letter-spacing: 10px;
-        text-shadow: 3px 3px 10px #000;
-    }
-    article .beer-know{
-        border: 5px ridge #b28850 ;
+article{
+    width: 55%;
+    margin: auto;
+}
+article h2{
+    width: 100%;
+    color: #B28850;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 10px #000;
+}
+article .beer-know{
+    border: 5px ridge #b28850 ;
 
-    }
-    .top-know,
-    .bottom-know{
+}
+.top-know,
+.bottom-know{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .top-know{
+}
+.top-know{
         padding:10px 0;
         margin: 10px 0;
         border-bottom: 2px dashed #b28850 ;
+}
+.bottom-know{
+    flex-direction: row-reverse;
+}
 
-    }
-    .bottom-know{
-        flex-direction: row-reverse;
-    }
+.top-know .txt,
+.bottom-know .txt{
+    width: 500px;
+    color:#fff;
+}
 
-    .top-know .txt,
-    .bottom-know .txt{
-        width: 600px;
-        color:#fff;
-    }
-
-    .top-know .txt h3,
-    .bottom-know .txt h3{
+.top-know .txt h3,
+.bottom-know .txt h3{
     color: #FFE75F;
     font-size: 22px;
-    font-weight: 700;
     letter-spacing: 2.2px;
     margin: 5px 10px;
     text-shadow: 3px 3px 10px #000;
 }
 
-    .top-know .txt p,
-    .bottom-know .txt p{
+.top-know .txt p,
+.bottom-know .txt p{
     font-size: 18px;
-    font-weight: 400;
     line-height: 2;
     letter-spacing: 1px;
     margin: 5px 10px;
 }
-
-    .know-btn{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .know-btn .btn a{
-        display: block;
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 16px;
-        height: 20px;
-        margin: 15px 0;
-    }
-
-    .know-btn .btn a:hover{
-        color: #FFE75F;
-    }
+.know-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.know-btn .btn a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 20px;
+    margin: 15px 0;
+}
+.know-btn .btn a:hover{
+    color: #FFE75F;
+}
 /* 底部知識區結束 */

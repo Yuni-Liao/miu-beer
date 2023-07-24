@@ -7,9 +7,6 @@ article{
 article h1{
     color: #fff;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 8.4px;
     display: flex;
     justify-content: center;
@@ -41,7 +38,6 @@ article .news-container{
     margin-top: 10px;
     color: #FFF;
     font-size: 18px;
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: 2.2px;
     padding: 10px;
@@ -58,5 +54,4 @@ article .news-container{
 .back-btn a:hover{
     color: #FFE75F;
 }
-
     /* 內文區結束 */

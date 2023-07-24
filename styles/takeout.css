@@ -38,7 +38,6 @@
     text-decoration: none;
     color: #b28850;
     font-size: 18px;
-    font-weight: bold;
 }
 .food-card-container{
     width: 1200px;
@@ -68,6 +67,7 @@
 .food-card-container .card .txt h2{
     color: #333;
     font-weight: bold;
+    margin-bottom: 3px;
 }
 .food-card-container .card .txt span{
     display: block;
@@ -89,16 +89,17 @@
 }
 
 .next-btn{
-    border: 2px solid #b28850;
+    background-color: #b28850;
     width: 40px;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
+    box-shadow: 3px 3px 10px #000;
 }
 
 .next-btn a{
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #b28850;
+    color: #333;
 }
