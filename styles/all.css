@@ -180,9 +180,13 @@ header .menu-list .menu-logo{
 .marquee{
     height: 30px;
     background-color: #fff;
+    width: 80%;
     opacity: .6;
     text-align: center;
     line-height: 30px;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
 }
 
 .marquee p{
@@ -198,6 +202,26 @@ header .menu-list .menu-logo{
     }
 }
 /* 跑馬燈結束 */
+
+/* 麵包屑 */
+.path{
+    width: 120px;
+    padding: 10px;
+    margin-left: 20%;
+}
+.path li{
+    display: inline-block;
+}
+
+.path li:nth-child(1)::after{
+    content: '/';
+    color: #fff;
+}
+
+.path li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 /* footer開始 */
 footer {
