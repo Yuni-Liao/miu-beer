@@ -176,6 +176,7 @@ header .menu-list .menu-logo{
     position: absolute;
     right: 10%;
     top:5%;
+    z-index: 1;
     }
     /* 頂端logo與購物車結束 */
 
