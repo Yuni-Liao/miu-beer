@@ -20,7 +20,7 @@
     margin-left: 95%;
     border-radius: 25%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger-container .btn-open{
@@ -28,7 +28,7 @@
     right: 45px;
     top: -30px;
     color: #fff;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger{
@@ -38,7 +38,7 @@
     margin: auto;
     position: relative;
     border-radius: 25%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .burger span{
@@ -97,7 +97,7 @@ header .menu-list {
     transform: scaleY(0);
     transition: transform .3s ease-in-out;
     transform-origin: 50% 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 header .menu-list a{
@@ -129,7 +129,7 @@ header .menu-list .menu-logo{
     position: fixed;
     right: 3%;
     top: 60%;
-    z-index: 1;
+    z-index: 3;
 }
 .booking-btn img{
     width: 50px;
