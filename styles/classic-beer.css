@@ -183,13 +183,14 @@ section .more:hover a{
 
 .beer-container .btn{
     border: 2px solid #b28850;
-    width: 70px;
+    width: 60px;
     padding: 10px;
     margin: 10px auto 20px;
     border-radius: 5px;
 }
 
 .beer-container .btn a{
+    font-size: 14px;
     display: block;
     text-align: center;
     text-decoration: none;

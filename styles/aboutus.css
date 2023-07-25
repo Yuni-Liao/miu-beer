@@ -1,6 +1,6 @@
 .movie{
     width: 100%;
-    background-color: #0008;
+    background-color: #080A08;
 }
 
 .movie video{
@@ -160,6 +160,15 @@
     animation: up 3s linear infinite alternate;
 }
 
+@keyframes up {
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(75px);
+    }
+}
+
 /* 烤肉上方文字 */
 .center-pic .beer .bbq .center-txt{
     width: 100%;
@@ -198,8 +207,14 @@
     border-radius: 5px;
     color:#333;
     box-shadow: 3px 3px 10px #000;
+    scale: 0;
 }
 
+.center-pic .beer .bubbles .center-txt a:hover,
+.center-pic .beer .bbq .center-txt a:hover{
+    background-color: #000;
+    color: #ffe75f;
+}
 /* 下半部Our story */
 .story-wrap{
     width: 1200px;
@@ -223,19 +238,19 @@
 .story-wrap img{
     width: 100%;
     vertical-align: middle;
+    border-radius: 10px;
 }
 
 .story-wrap .circle{
     width: 1200px;
     margin: auto;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 .story-wrap .circle .btn{
     width: 100px;
     height: 100px;
-    background-color: #b28850;
     border-radius: 50%;
     margin: 20px 50px;
     position: relative;
@@ -249,12 +264,14 @@ justify-content: center;
     left: 30%
 }
 
-#switch:checked ~ .story-wrap .circle label[for="switch"] ul li{
-    background-color: #fff;
+#switch:checked ~ .story-wrap .circle label[for="switch"] ul li img{
+    transform: scale(1.2);
+    transition: .5s;
 }
 
-#switch-two:checked ~  .story-wrap .circle label[for="switch-two"] ul li{
-    background-color: #fff;
+#switch-two:checked ~  .story-wrap .circle label[for="switch-two"] ul li img{
+    transform: scale(1.2);
+    transition: .5s;
     }
 
 #switch:checked ~ .story-wrap .staff{

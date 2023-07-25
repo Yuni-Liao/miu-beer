@@ -173,17 +173,28 @@ x
 
 .delicious-food .btn{
     border: 2px solid #b28850;
-    width: 70px;
+    width: 60px;
     padding: 10px;
     margin: 10px auto 20px;
     border-radius: 5px;
 }
 
 .delicious-food .btn a{
+    font-size: 14px;
     display: block;
     text-align: center;
     text-decoration: none;
     color: #b28850;
+}
+
+.delicious-food .btn:hover{
+    background-color: #000;
+    scale: 1.1;
+    transition: .5s;
+}
+.delicious-food .btn:hover a{
+    color: #ffe75f;
+    transition: .5s;
 }
 /* 內用菜單正面 */
 .delicious-food .menu-box{
