@@ -33,9 +33,9 @@ font-size: 48px;
 letter-spacing: 4.8px;
 text-align:right;
 position: absolute;
-bottom: 30%;
+bottom: 40%;
 right: 20%;
-line-height: 189.023%;
+line-height: 2;
 text-shadow: 3px 3px 10px #b28850;
 }
 
@@ -52,7 +52,7 @@ text-shadow: 3px 3px 10px #b28850;
 .center-banner .center-banner-txt{
 color: #FFF;
 font-size: 48px;
-line-height: 189.023%; /* 90.731px */
+line-height: 189.023%; /*90.731px */
 letter-spacing: 50px;
 writing-mode: vertical-lr;
 position: absolute;

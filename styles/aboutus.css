@@ -26,17 +26,17 @@
     width: 300px;
     font-size: 28px;
     color: #fff;
-    line-height: 2;
+    line-height: 1.75;
+    margin: 20px 0;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    margin: 20px;
 }
 
 .container .slogn .txt p{
     width: 300px;
     color: #fff;
     line-height: 2;
-    margin: 0 20px;
+    margin: 20px 0;
 }
 
 .container .aboutfood{
@@ -51,7 +51,7 @@
     line-height: 2;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
-    margin: 20px;
+    margin: 20px 0;
     text-align: right;
 }
 
@@ -59,7 +59,7 @@
     width: 300px;
     color: #fff;
     line-height: 2;
-    margin: 20px;
+    margin: 20px 0;
     text-align: right;
 }
 
