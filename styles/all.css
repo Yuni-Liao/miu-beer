@@ -7,6 +7,7 @@
     position: relative;
     font-family: "Noto Sans TC",Raleway,sans-serif,'Times New Roman', Times, serif;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 /* 漢堡選單開始 */
@@ -19,7 +20,7 @@
     margin-left: 95%;
     border-radius: 25%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger-container .btn-open{
@@ -27,7 +28,7 @@
     right: 45px;
     top: -30px;
     color: #fff;
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger{
@@ -37,7 +38,7 @@
     margin: auto;
     position: relative;
     border-radius: 25%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger span{
@@ -96,13 +97,15 @@ header .menu-list {
     transform: scaleY(0);
     transition: transform .3s ease-in-out;
     transform-origin: 50% 0;
+    z-index: 1;
 }
 
 header .menu-list a{
+    padding: 10px;
     text-decoration: none;
     font-size: 28px;
-    line-height: 3;
     color: #fff;    
+    line-height: 2;
 }
 
 header .menu-list a:hover{

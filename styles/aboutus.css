@@ -1,21 +1,29 @@
+.movie{
+    width: 100%;
+    background-color: #0008;
+}
+
+.movie video{
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+
 /* 上半部開始 */
 .container{
     width: 1200px;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .container .slogn{
-    width: 1200px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.container .slogn .bar{
-    align-self: center;
-}
 
-.container .slogn .bar img{
+.container .slogn img{
     border-radius: 10px;
 }
 
@@ -33,24 +41,15 @@
     width: 300px;
     color: #fff;
     line-height: 2;
-    margin: 20px;
+    margin: 0 20px;
 }
-/* 右側文字描述 */
-.content .description{
-    width: 1200px;
-    margin: 0 auto;
+
+.container .aboutfood{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.content .description .side-txt{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-.content .description .side-txt .txt h2{
+
+.container .aboutfood .txt h2{
     width: 300px;
     font-size: 22px;
     color: #fff;
@@ -61,69 +60,23 @@
     text-align: right;
 }
 
-.content .description .side-txt .txt p{
+.container .aboutfood .txt p{
     width: 300px;
     color: #fff;
     line-height: 2;
     margin: 20px;
     text-align: right;
 }
-.content .description .side-txt img{
-    border-radius: 10px;
-}
-.content .description .side-txt .flower{
-    align-self: flex-start;
-    animation: up 3s linear infinite alternate;
-}
-.content .description .side-txt .cat{
-    align-self: flex-end;
-    margin-top: 50px;
-    animation: down 3s linear infinite alternate;
-}
-@keyframes up{
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(-70px);
-    }
+
+.container .slogn img{
+    width: 500px;
+    height: 600px;
 }
 
-@keyframes down{
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(70px);
-    }
-}
-/* 左側圖片區 */
-.content .side-pic{
-    width: 600px;
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column;
+.container .aboutfood img{
+    width: 500px;
 }
 
-.content .side-pic img{
-    border-radius: 10px;
-    animation: move 3s linear infinite alternate;
-}
-
-.content .side-pic .cat{
-    margin: 150px 0;
-    align-self: flex-end;
-    animation: down 3s linear infinite alternate;
-}
-
-@keyframes move{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(70px);
-    }
-}
 /* 中間大圖區 */
 .center-pic{
     width: 100%;
@@ -203,6 +156,7 @@
 .center-pic .beer .bbq .center-txt img{
     width: 70px;
     margin: 0 50px;
+    animation: up 3s linear infinite alternate;
 }
 
 /* 烤肉上方文字 */

@@ -285,7 +285,7 @@ text-shadow: 3px 3px 10px #000;
 }
     /* 底部知識區開始 */
 article{
-    width: 55%;
+    width: 60%;
     margin: auto;
 }
 article h2{
@@ -303,23 +303,27 @@ article .beer-know{
 }
 .top-know,
 .bottom-know{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    width: 100%;
+    padding:5px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .top-know{
-        padding:10px 0;
-        margin: 10px 0;
-        border-bottom: 2px dashed #b28850 ;
+    border-bottom: 2px dashed #b28850 ;
 }
 .bottom-know{
     flex-direction: row-reverse;
 }
 
+.top-know .pic,
+.bottom-know .pic{
+    align-self: center;
+}
 .top-know .txt,
 .bottom-know .txt{
-    width: 500px;
+    width: 400px;
     color:#fff;
 }
 
