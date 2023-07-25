@@ -226,7 +226,8 @@ text-shadow: 3px 3px 10px #000;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    justify-content: center;
+    /* position: relative; */
     box-sizing: border-box;
 }
 
@@ -241,7 +242,6 @@ text-shadow: 3px 3px 10px #000;
     margin: 18px;
     border-radius: 2%;
     border: 5px solid #B28850;
-    position: relative;
     transition: 1s;
 }
 
@@ -277,44 +277,12 @@ text-shadow: 3px 3px 10px #000;
     height: 15px;
     font-size: 16px;
     color: #fff;
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
     text-align: center;
 }
 .food-card:hover .tag{
     color: #FFE75F;
     text-shadow: 3px 3px 10px #000;
 }
-
-    /* 食物卡片區按鈕開始 */
-.food-card-container .food-arrow{
-    width: 50px;
-    height: 50px;
-    }
-    
-.food-arrow .food-arrow-left,
-.food-arrow .food-arrow-right{
-    position: absolute;
-    color:#B28850;
-}
-
-.food-arrow .food-arrow-left{
-    top:45%;
-    left: 5%;
-}
-
-.food-arrow .food-arrow-right{
-    top:45%;
-    right: 4.5%;
-}
-
-.food-arrow-left .fa-solid,
-.food-arrow-right .fa-solid{
-    font-size: 50px;
-}
-    /* 食物卡片區按鈕結束 */
-
     /* 底部知識區開始 */
 article{
     width: 55%;
