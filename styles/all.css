@@ -230,7 +230,7 @@ footer {
     text-decoration: none;
     color: #fff;
     line-height: 100px;
-    margin: 0px 20px;
+    margin: 0px 10px;
     font-size: 20px;
 }
 
@@ -278,28 +278,24 @@ footer {
 
 .warning-box-txt {
     width: 100%;
-    position: relative;
     text-align: center;
 }
 
 .warning-box p {
     color: #eee;
-    position: absolute;
-    top: 20px;
+    display: inline-block;
 }
 
 .warning-box .tibame {
-    width: 300px;
-    right: 10px;
-    top: 5px;
-    bottom: 5px;
-    line-height: 1.5;
+    font-size: 14px;
+    width: 270px;
 }
 
 .warning-box .drink {
     font-size: 50px;
-    left: 15%;
-    right: 15%;
+    right: 15%; 
+    line-height: 1.25;
+    text-align: center;
 }
 
 .warning-box .drink span {
