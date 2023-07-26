@@ -128,7 +128,7 @@ header .menu-list .menu-logo{
 .booking-btn{
     position: fixed;
     right: 3%;
-    top: 60%;
+    top: 70%;
     z-index: 3;
 }
 .booking-btn img{
@@ -206,6 +206,45 @@ header .menu-list .menu-logo{
 }
 /* 跑馬燈結束 */
 
+/* 海報文字特效 */
+@keyframes lights {
+    0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+    1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 02),
+    0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 90%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 02),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 04);
+    }
+    70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+    -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 04);
+    }
+    100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+    -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+}
+
 /* footer開始 */
 footer {
     background-size: cover;
@@ -215,7 +254,7 @@ footer {
     left: 0;
     width: 100%;
     height: 175px;
-    background-image: url(../images/footer.svg);
+    background-image: url(../images/footer_two.png);
     display: flex;
     justify-content: space-evenly;
 }
@@ -233,7 +272,7 @@ footer {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    line-height: 100px;
+    line-height: 120px;
     margin: 0px 10px;
     font-size: 20px;
 }
@@ -276,8 +315,7 @@ footer {
     height: 75px;
     bottom: 0;
     position: fixed;
-    background-image: url(../images/footerbeer.svg);
-    background-size: cover;
+    background-color: #000;
 }
 
 .warning-box-txt {
@@ -302,9 +340,11 @@ footer {
     text-align: center;
 }
 
-.warning-box .drink span {
-    color: #fff;
-    font-weight: bolder;
+.warning-box img{
+    width: 60px;
+    height: 6dvb;
+    vertical-align: middle;
+    margin: 0 10px;
 }
 
 .footer a:hover,
