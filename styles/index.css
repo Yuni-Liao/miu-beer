@@ -1,7 +1,7 @@
 /* 首頁banner開始 */
 .top{
     width: 100%;
-    height: 450px;
+    height: 100vh;
     background-image: url(../images/index_bg.jpg);
     background-size: cover;
     position: relative;
@@ -9,7 +9,7 @@
 .top-mask{
     background-color: #0009;
     width: 100%;
-    height: 450px;
+    height: 100vh;
     position: absolute;
 }
 
@@ -28,37 +28,37 @@
 }
 
 .top .top-banner-txt{
-color: #fff;
-font-size: 48px;
-letter-spacing: 4.8px;
-text-align:right;
-position: absolute;
-bottom: 40%;
-right: 20%;
-line-height: 2;
-text-shadow: 3px 3px 10px #b28850;
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 4px;
+    text-align:right;
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    line-height: 2;
+    text-shadow: 3px 3px 10px #b28850;
 }
 
 /* 首頁第二張大啤酒圖開始 */
 
 .center-banner{
     width: 100%;
-    height: 1100px;
+    height: 100vh;
     background-image: url(../images/index_centerbeer.png);
     background-size: cover;
     position: relative;
 }
 
 .center-banner .center-banner-txt{
-color: #FFF;
-font-size: 48px;
-line-height: 189.023%; /*90.731px */
-letter-spacing: 50px;
-writing-mode: vertical-lr;
-position: absolute;
-left: 20%;
-top: 20%;
-text-shadow: 3px 3px 10px #000;
+    color: #FFF;
+    font-size: 32px;
+    line-height: 2;
+    letter-spacing: 25px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    text-shadow: 3px 3px 10px #000;
 }
 /* 首頁第二張大啤酒圖結束 */
 
