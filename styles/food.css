@@ -1,7 +1,16 @@
+h1 {
+    width: 100%;
+    color: #FFF;
+    font-size: 100px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 50px 0;
+    text-shadow: 15px 15px 10px #000;
+}
 /* 圖片跑馬燈區 */
 .picmarquee{
     width: 100%;
-    padding-top: 120px;
+    padding: 50px 0;
     margin: auto;
 }
 
@@ -90,6 +99,7 @@
 .classic-beer .beer-container .beer .pic img{
     width: 150px;
     height: 400px;
+    vertical-align: middle;
     transition: 1.5s;
 }
 
@@ -102,40 +112,63 @@
     position: absolute;
     top: 30%;
     left: 30%;
-    display: none;
-}
-
-.classic-beer .beer-container .beer:hover .txt{
     display: block;
 }
+
 .classic-beer .beer-container .beer:hover img{
     opacity: .2;
     transition: .5s;
 }
 
+.classic-beer .beer-container .beer .name{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 .classic-beer .beer-container .beer .txt i{
     text-align: left;
-    color: #fd0;
     font-size: 25px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
 }
 
 .classic-beer .beer-container .beer .txt h3{
     display: inline-block;
     color: #fff;
     font-size: 20px;
+    transition: .3s;
 }
+
 .classic-beer .beer-container .beer .txt p{
     text-align: right;
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     margin: 10px;
     padding-top: 40px;
+    transition: .3s;
 }
+
+.classic-beer .beer-container .beer:hover i{
+    color: #ffe75f;
+    opacity: 1;
+    transition: .5s;
+}
+
+.classic-beer .beer-container .beer:hover .name{
+    text-shadow: 3px 3px 10px #ffe75f;
+}
+
+
 .classic-beer .beer-container .beer .txt span{
     writing-mode: horizontal-tb;
 }
+
 /* 美味料理區 */
-x
+
 .delicious-food{
     margin: 30px auto;
 }
@@ -190,11 +223,11 @@ x
 .delicious-food .btn:hover{
     background-color: #000;
     scale: 1.1;
-    transition: .5s;
+    transition: .3s;
 }
 .delicious-food .btn:hover a{
     color: #ffe75f;
-    transition: .5s;
+    transition: .3s;
 }
 /* 內用菜單正面 */
 .delicious-food .menu-box{

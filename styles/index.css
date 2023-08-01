@@ -330,7 +330,7 @@ header nav .shopping-cart a:hover{
 .brewery .txt .link a{
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
     transition: .2s;
     align-self: flex-end;
 }

@@ -52,7 +52,7 @@ section .content .info-container{
     border-radius: 10px;
 
 }
-
+/* 啤酒介紹區 */
 section .side-beer{
     width: 250px;
 }
@@ -74,6 +74,7 @@ section .content .info-container .info span{
     color: #FFE75F;
 }
 
+/* 側邊條 */
 section .content .info-container .side-info span{
     display: inline-block;
     width: 30px;
@@ -92,6 +93,10 @@ section .content .info-container .side-info li:nth-child(2){
 
 section .content .info-container .side-info li{
     margin: 10px 0;
+}
+/* 預先隱藏的資訊 */
+section .content .info-container .pre{
+    display: none;
 }
 section .content .icon{
     width: 600px;
@@ -118,7 +123,8 @@ section .content .more{
     color: #b28850;
     text-align: center;
     margin: 0 auto;
-    transition: 1s;
+    transition: .3s;
+    border-radius: 10px;
 }
 
 section .content .more a{
@@ -126,17 +132,17 @@ section .content .more a{
     text-align: center;
     text-decoration: none;
     color: #b28850;
-    transition: 1s;
+    transition: .3s;
 }
 
 section .more:hover{
     background-color: #b28850;
-    transition: 1s;
+    transition: .3s;
 }
 
 section .more:hover a{
     color: #000;
-    transition: 1s;
+    transition: .3s;
 }
 
 .beer-container{
@@ -157,42 +163,33 @@ section .more:hover a{
     transition: 1s;
 }
 
-.beer-container .beer .active img{
-    width: 90px;
-    opacity: 1;
-}
-
-.beer-container .beer .active .txt{
-    opacity: 1;
-}
-
 .beer-container .beer .txt{
+    text-align: center;
+    margin: 3px 0;
     color: #fff;
     opacity: 0;
-    transition: 1s;
+    transition: .3s;
 }
 
 .beer-container .beer .pic:hover img{
     opacity: 1;
-    transition: 1s;
+    transition: .3s;
 }
 .beer-container .beer .pic:hover .txt{
+    margin: 3px 0;
     opacity: 1;
-    transition: 1s;
-}
-
-.beer-container .btn{
-    border: 2px solid #b28850;
-    width: 60px;
-    padding: 10px;
-    margin: 10px auto 20px;
-    border-radius: 5px;
-}
-
-.beer-container .btn a{
-    font-size: 14px;
-    display: block;
+    transition: .3s;
     text-align: center;
+}
+
+.beer-container a{
+    display: inline-block;
     text-decoration: none;
-    color: #b28850;
+    color: #fff;
+    margin: 10px auto 20px;
+    transition: .3s;
+}
+
+.beer-container a:hover{
+    color: #FFE75F;
 }
