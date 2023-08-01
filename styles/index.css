@@ -1,3 +1,46 @@
+/* 選單 */
+header nav{
+    background-image: url('../images/footer_two.png');
+    background-size: cover;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline;
+}
+header nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 100px;
+    margin: 0px 30px;
+    font-size: 20px;
+    transition: .2s;
+}
+
+header nav .pic{
+    padding: 10px;
+}
+header nav .pic img {
+    width: 170px;
+    vertical-align: middle;
+}
+
+header nav .shopping-cart a{
+    color: #fff;
+    line-height: 100px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+header nav ul a:hover,
+header nav .shopping-cart a:hover{
+    color: #b28850;
+}
+/* 選單結束 */
+
 /* 首頁banner開始 */
 .top{
     width: 100%;
@@ -11,20 +54,6 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-}
-
-.top .logo {
-    position: absolute;
-    top: .5%;
-    left: 10px;
-    width: 200px;
-    height: 100px;
-}
-
-.top .shopping-cart{
-    position: absolute;
-    top: 5%;
-    right: 10%;
 }
 
 .top .top-banner-txt{
@@ -246,7 +275,7 @@
 .food-card .tag{
     width: 280px;
     height: 15px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
 }
@@ -271,6 +300,7 @@
 .brewery .pic img{
     width: 100%;
     height: 100%;
+    vertical-align: middle;
 }
 
 .brewery .txt{
@@ -289,21 +319,23 @@
 
 .brewery .txt p{
     color: #333;
+    font-size: 18px;
     line-height: 2;
-    margin: 20px 0;
+    margin: 25px 0;
 }
-
-.brewery .txt a{
-    display: block;
-    margin: auto;
-    padding:15px 0;
-    text-align: right;
+.brewery .txt .link{
+    width: 230px;
+    margin-left: auto;
+}
+.brewery .txt .link a{
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 14px;
+    transition: .2s;
+    align-self: flex-end;
 }
 
-.brewery .txt a:hover {
+.brewery .txt .link a:hover {
     color: #FFE75F;
 }
 
@@ -363,7 +395,7 @@
 .feedback-card .tag{
     width: 280px;
     height: 15px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     text-align: right;
 }

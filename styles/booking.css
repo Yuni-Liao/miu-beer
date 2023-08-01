@@ -1,97 +1,106 @@
     /* 地址區開始 */
-article{
-    width: 1200px;
-    position: relative;
-    margin: auto;
-}
+article {
+        width: 1200px;
+        margin: 0 auto 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-article h1{
+article h1 {
+    width: 100%;
     color: #FFF;
     font-size: 100px;
     letter-spacing: 5px;
     text-align: center;
-    margin: 50px 0 ;
-    text-shadow: 15px 15px 10px #000;
+        margin: 50px 0 30px 0;
+        text-shadow: 15px 15px 10px #000;
+}
+article section {
+        width: 50%;
+}
+article section .miuking,
+article section .miuqueen {
+        width: 90%;
+        margin: 20px 0;
 }
 
-.miuking,.miuqueen{
-    width: 600px;
-    margin: 30px 8%;
+article section .miuking .pic img,
+article section .miuqueen .pic img {
+        width: 100%;
+        border-radius: 6px;
 }
 
-.miuking .pic,
-.miuqueen .pic{
-    width: 500px;
-    height: 300px;
-}
-
-.miuking .pic img,
-.miuqueen .pic img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-
-.miuking .txt,
-.miuqueen .txt{
-    width: 600px;
-    color:#fff;
-}
-
-.miuking .txt h2,
-.miuqueen .txt h2{
+article section .miuking h2,
+article section .miuqueen h2 {
     color: #fff;
     font-size: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     display: inline;
     text-shadow: 3px 3px 10px #000;
 }
 
-.miuking .txt h2::after,
-.miuqueen .txt h2::after{
+article section .miuking h2::after,
+article section .miuqueen h2::after {
     content: '|';
 }
 
-.miuking .txt address,
-.miuqueen .txt address{
+article section .miuking address,
+article section .miuqueen address {
+    color: #fff;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 1px;
     margin: 5px 10px;
     display: inline;
 }
-
-    /* 地址區結束 */
-    /* 表單區開始 */
-article form{
-    width: 350px;
-    height: 600px;
+/* 地址區結束 */
+/* 表單區開始 */
+article .booking {
     color: #fff;
     font-size: 18px;
-    background-color: #0008;
-    border-radius: 2.5%;
-    position: absolute;
-    right: 10%;
-    top: 23%;
-    line-height: 2.5;
-    padding: 20px;
+    background-color: #b28850;
+    border-radius: 6px;
+    margin: 5% 0 2% 0;
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 
-article input,
-article select,
-article textarea{
-    position: relative;
-    right: -5%;
+article .booking div label span{
+    display: block;
+    margin: 5px 0;
 }
 
-article button{
-    position: absolute;
-    right: 40%;
-    bottom: 20%;
+article .booking input,
+article .booking textarea{         
+    width: 95%;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+article .booking select {
+    width: 100%;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+article .booking button {
     width: 80px;
     padding: 5px;
-    margin-top: 20px;
+    background-color: transparent;
+    border: 0px;
+    background-color: #fff;
     border-radius: 5px;
+    align-self: center;
+    box-shadow: 3px 3px 3px #333;
+}
+
+article .booking button span {
+    color: #333;
 }
 /* 表單區結束 */
 

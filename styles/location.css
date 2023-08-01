@@ -14,7 +14,7 @@ article h1{
 }
 
 .miuking,.miuqueen{
-    width: 1200px;
+    width: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -38,7 +38,8 @@ article h1{
 
 .miuking .txt,
 .miuqueen .txt{
-    width: 600px;
+    width: 500px;
+    padding: 0 10px;
     color:#000;
     background-color: #b28850;
 }

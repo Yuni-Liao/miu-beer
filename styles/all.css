@@ -3,126 +3,54 @@
 
 .body,html{
     background-image: url(../images/web_bg.jpg);
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
     font-family: "Noto Sans TC",Raleway,sans-serif,'Times New Roman', Times, serif;
     font-style: normal;
     overflow-x: hidden;
 }
 
-/* 漢堡選單開始 */
-.burger-container{
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    margin-top: 2.5%;
-    margin-left: 50%;
-    margin-left: 95%;
-    border-radius: 25%;
-    position: fixed;
-    z-index: 3;
-}
-
-.burger-container .btn-open{
-    position: relative;
-    right: 45px;
-    top: -30px;
-    color: #fff;
-    z-index: 3;
-}
-
-.burger{
-    width: 40px;
-    height: 40px;
-    background-color: #B28850;
-    margin: auto;
-    position: relative;
-    border-radius: 25%;
-    z-index: 3;
-}
-
-.burger span{
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin-bottom: 0;
-    transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
-    position: relative;
-    transform: translate(5px,8px);
-    inset: 0;
-}
-
-.burger span:nth-child(2),
-.burger span:nth-child(3){
-    margin-top: 7px;
-}
-
-#menu{
-    display: none;
-}
-
-#menu:checked + .menu-list{
-    width: 15px;
-    height: 15px;
-}
-
-#menu:checked + label .burger span:nth-child(1){
-    transform: translate(5px,12px) rotate(135deg);
-    top: 5px;
-    transition: top .3s ease-in-out, transform .3s ease-in-out ;
-}
-
-#menu:checked + label .burger span:nth-child(2){
-    display: none;
-}
-
-#menu:checked + label .burger span:nth-child(3){
-    transform: translate(5px,12px) rotate(-135deg);
-    top: -4px;
-    transition: top .3s ease-in-out, transform .3s ease-in-out ;
-}
-
-header .menu-list {
-    background-image: url(../images/menubg.jpg);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+/* 選單 */
+header nav{
+    background-image: url('../images/footer_two.png');
+    background-size: cover;
+    padding: 0px 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    transform: scaleY(0);
-    transition: transform .3s ease-in-out;
-    transform-origin: 50% 0;
-    z-index: 2;
+    justify-content: space-between;
 }
 
-header .menu-list a{
-    padding: 10px;
+header nav ul li {
+    display: inline;
+}
+header nav ul li a{
+    text-align: center;
     text-decoration: none;
-    font-size: 28px;
-    color: #fff;    
-    line-height: 2;
+    color: #fff;
+    line-height: 100px;
+    margin: 0px 30px;
+    font-size: 20px;
+    transition: .2s;
 }
 
-header .menu-list a:hover{
+header nav .pic{
+    padding: 10px;
+}
+header nav .pic img {
+    width: 170px;
+    vertical-align: middle;
+}
+
+header nav .shopping-cart a{
+    color: #fff;
+    line-height: 100px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+header nav ul a:hover,
+header nav .shopping-cart a:hover{
     color: #b28850;
 }
-
-header .menu-list .menu-logo{
-    position: relative;
-    right: 300px;
-    top: 250px;
-}
-
-#menu:checked ~ .menu-list {
-        transform: scaleY(1);
-    }
-
-/* 漢堡選單結束 */
+/* 選單結束 */
 
 /* 立即訂位開始 */
 .booking-btn{
@@ -162,30 +90,12 @@ header .menu-list .menu-logo{
     }
 /* 立即訂位結束 */
 
-    /* 頂端logo與購物車開始 */
-.top .logo {
-    position: absolute;
-    top: .5%;
-    left: 10px;
-    width: 200px;
-    height: 100px;
-    z-index: 1;
-    }
-
-.top .shopping-cart{
-    position: absolute;
-    right: 10%;
-    top:5%;
-    z-index: 1;
-    }
-    /* 頂端logo與購物車結束 */
-
 /* 跑馬燈開始 */
 .marquee{
     height: 30px;
     background-color: #fff;
     width: 100%;
-    opacity: .6;
+    opacity: .5;
     text-align: center;
     line-height: 30px;
     margin: auto;
@@ -193,7 +103,7 @@ header .menu-list .menu-logo{
 
 .marquee p{
     color: #333;
-    animation: marquee 20s 0s infinite linear;
+    animation: marquee 20s -1s infinite linear;
 }
 
 @keyframes marquee {
@@ -261,10 +171,7 @@ footer {
 
 .footer-pic img {
     width: 170px;
-    bottom: 0px;
     padding-top:10px;
-    top: 10px;
-    left: 5%;
     display: block;
 }
 
@@ -275,6 +182,7 @@ footer {
     line-height: 120px;
     margin: 0px 10px;
     font-size: 20px;
+    transition: .2s;
 }
 
 .footer ul li {
