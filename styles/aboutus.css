@@ -23,20 +23,22 @@
 }
 
 .container .slogn .txt h1{
-    width: 300px;
+    width: 400px;
     font-size: 28px;
     color: #fff;
     line-height: 1.75;
     margin: 20px 0;
+    text-align: center;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
 }
 
 .container .slogn .txt p{
-    width: 300px;
+    width: 400px;
     color: #fff;
     line-height: 2;
     margin: 20px 0;
+    font-size: 18px;
 }
 
 .container .aboutfood{
@@ -45,10 +47,10 @@
 }
 
 .container .aboutfood .txt h2{
-    width: 300px;
+    width: 400px;
     font-size: 28px;
     color: #fff;
-    line-height: 2;
+    line-height: 1.75;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
     margin: 20px 0;
@@ -56,11 +58,11 @@
 }
 
 .container .aboutfood .txt p{
-    width: 300px;
+    width: 400px;
     color: #fff;
     line-height: 2;
     margin: 20px 0;
-    text-align: right;
+    font-size: 18px;
 }
 
 .container .slogn img{
@@ -77,223 +79,211 @@
 .container .aboutfood img{
     border-radius: 10px;
 }
+/* 啤酒分隔線 */
+.little{
+    padding: 50px;
+    background-image: url(../images/about_littlebeer.png);
+    background-repeat: repeat-x;
+    margin-top: 50px;
+}
 
-/* 中間大圖區 */
-.center-pic{
-    width: 100%;
-    margin: auto;
+/* Our story & timeline開始 */
+.ourstory{
+    max-width: 100%;
+}
+.ourstory .ourstory-title{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 10px #000;
+    margin: 50px 0;
+}
+
+.ourstory .timeline-box{
+    max-width: 100%;
+    background-image: url('../images/beer_bg.png');
+}
+
+.ourstory .timeline {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 30%;
+    border-left: 4px solid lightsalmon;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #0005;
+    color: #eee;
+    margin: auto;
+    line-height: 1.5;
+    padding: 20px;
 }
 
-.center-pic img{
-    width: 100%;
-    vertical-align: middle;
+.ourstory .timeline .event h4 {
+    font-size: 20px;
+    color: lightsalmon;
+}
+.ourstory .timeline .event p {
+    font-size: 18px;
 }
 
-.center-pic .beer{
-    width: 100%;
-    vertical-align: middle;
+.ourstory .timeline .event {
+    border-bottom: 1px dashed lightskyblue;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 }
 
-.center-pic .bubbles{
-    width: 100%;
-    vertical-align: middle;
+.ourstory .timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.ourstory .timeline .event:after {
     position: absolute;
-    top: 55%;
-    left: 0;
-}
-
-.center-pic .bbq{
-    width: 100%;
-    vertical-align: middle;
-    position: absolute;
-    top: 80%;
-}
-
-/* 中間文字區 */
-.center-pic .beer .bubbles .center-txt{
-    width: 100%;
-    background-image: url('../images/about_black.svg');
-    background-size: cover;
-    color: #fff;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-pic .beer .bubbles .center-txt h3{
-    width: 150px;
-    font-size: 25px;
-    padding-top: 20px;
-}
-
-.center-pic .beer .bubbles .center-txt p{
-    width: 500px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-top: 20px;
-    align-self: flex-end;
-}
-
-.center-pic .beer .bubbles .center-txt a{
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    background-color: #b28850;
-    border-radius: 5px;
-    color:#333;
-    box-shadow: 3px 3px 10px #000;
-}
-
-.center-pic .beer .bubbles .center-txt img,
-.center-pic .beer .bbq .center-txt img{
-    width: 70px;
-    margin: 0 50px;
-    animation: up 3s linear infinite alternate;
-}
-
-@keyframes up {
-    0%{
-        transform: translateY(-5px);
-    }
-    100%{
-        transform: translateY(75px);
-    }
-}
-
-/* 烤肉上方文字 */
-.center-pic .beer .bbq .center-txt{
-    width: 100%;
-    background-image: url('../images/about_blackdown.svg');
-    background-size: cover;
-    color: #fff;
-    position: absolute;
+    display: block;
     top: 0;
-    left: 0;
-    padding: 35px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-.center-pic .beer .bbq .center-txt h3{
-    width: 150px;
-    font-size: 25px;
-    padding-top: 20px;
-}
-
-.center-pic .beer .bbq .center-txt p{
-    width: 500px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-top: 20px;
-    align-self: flex-end;
-}
-
-.center-pic .beer .bbq .center-txt a{
+.ourstory .timeline .event:before {
+    min-width: 120px;
     font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    background-color: #b28850;
-    border-radius: 5px;
-    color:#333;
-    box-shadow: 3px 3px 10px #000;
-    scale: 0;
+    text-align: right;
+    color: lightgrey;
 }
 
-.center-pic .beer .bubbles .center-txt a:hover,
-.center-pic .beer .bbq .center-txt a:hover{
-    background-color: #000;
-    color: #ffe75f;
+.ourstory .timeline .event:after {
+    content: "";
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 4px lightsalmon;
+    background: #eee;
+    border-radius: 50%;
+    top: 5px;
+    left: -28px;
 }
-/* 下半部Our story */
-.story-wrap{
-    width: 1200px;
+
+/* 時間線日期區 */
+.ourstory .timeline .spring:before{
+    content:'2021/04/22';
+    }
+    .ourstory .timeline .classic:before{
+        content:'2021/10/08';
+    }
+    .ourstory .timeline .summer:before{
+        content:'2022/02/01';
+    }
+    .ourstory .timeline .newbeer:before{
+        content:'2022/07/07';
+    }
+    .ourstory .timeline .autumn:before{
+        content:'2021/10/08';
+    }
+    .ourstory .timeline .winter:before{
+        content:'2023/02/28';
+    }
+
+/* 時間線結束 */
+/* 經營者區開始 */
+.owned{
+    max-width: 1200px;
     margin: auto;
-    padding-top: 55%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
-.story-wrap h2{
+.owned h3{
+    max-width: 100%;
     color: #fff;
-    font-size: 28px;
+    margin: 50px auto;
     text-align: center;
-    padding: 50px;
+    font-size: 28px;
+    letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
 
-.story-wrap .pic{
-    width: 600px;
-    margin: auto;
+.owned .owned-card{
+    max-width: 100%;
+    display: flex;
+    margin: 20px auto;
 }
 
-.story-wrap img{
+.owned .dad{
+    flex-direction: row-reverse;
+}
+
+.owned .owned-card .pic{
+    max-width: 40%;
+}
+.owned .owned-card .pic img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+.owned .owned-card .txt{
+    max-width: 60%;
+    margin: 30px;
+    align-self: center;
+}
+
+.owned .owned-card .txt p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.owned .owned-card .txt p span{
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    line-height: 2;
+}
+/* 加入我們 開始 */
+.joinus{
+    max-width: 100%;    
+    margin: 120px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #b28850;
+}
+
+.joinus .joinus-title{
+    width: 100%;
+    color: #fff;
+    margin: -80px 0;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.joinus .pic{
+    width: 50%;
+}
+
+.joinus .pic img{
     width: 100%;
     vertical-align: middle;
-    border-radius: 10px;
 }
 
-.story-wrap .circle{
-    width: 1200px;
+.joinus .txt{
+    width: 45%;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    padding-top: 15px;
 }
 
-.story-wrap .circle .btn{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 20px 50px;
-    position: relative;
+.joinus .txt h4{
+    font-size: 28px;
+    color: #333;
+    line-height: 2;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
 }
 
-.story-wrap .circle .btn span{
-    text-decoration: none;
-    color: #000;
-    position: absolute;
-    top: 40%;
-    left: 30%
-}
-
-#switch:checked ~ .story-wrap .circle label[for="switch"] ul li img{
-    transform: scale(1.2);
-    transition: .5s;
-}
-
-#switch-two:checked ~  .story-wrap .circle label[for="switch-two"] ul li img{
-    transform: scale(1.2);
-    transition: .5s;
-    }
-
-#switch:checked ~ .story-wrap .staff{
-    display: block;
-}
-
-#switch-two:checked ~  .story-wrap .staffoneman{
-    display: block;
-}
-
-#switch-two:checked ~  .story-wrap .staff{
-    display: none;
-}
-
-#switch-two:checked ~  .story-wrap .staffoneman{
-    display: block;
-}
-
-#switch,#switch-two{
-    display: none;
-}
-
-.story-wrap .staffoneman{
-    display: none;
+.joinus .txt p{
+    color: #333;
+    font-size: 18px;
+    line-height: 2;
+    margin: 25px 0;
 }

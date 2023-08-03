@@ -88,11 +88,11 @@ header nav .shopping-cart a:hover{
     width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     position: relative;
 }
 
-.news-card{
+.news-card-container .news-card{
     box-sizing: border-box;
     width: 300px;   
     height: 300px;
@@ -102,11 +102,15 @@ header nav .shopping-cart a:hover{
     position: relative; 
 }
 
-.news-card a{
+.news-card-container .side{
+    display: none;
+}
+
+.news-card-container .news-card a{
     text-decoration: none;
 }
 
-.news-card .card-txt{
+.news-card-container .news-card .card-txt{
     color: #fff;
     font-size: 18px;
     padding: 20px 10px;
@@ -114,30 +118,30 @@ header nav .shopping-cart a:hover{
     text-align: center;
 }
 
-.news-card:hover .card-txt{
+.news-card-container .news-card:hover .card-txt{
     color: #fa0;
     text-shadow: 3px 3px 10px #000;
 }
 
-.news-card .card-pic{
+.news-card-container .news-card .card-pic{
     overflow: hidden;
 }
 
-.news-card::after{
+.news-card-container .news-card::after{
     content: '';
 }
 
-.news-card .card-pic img{
+.news-card-container .news-card .card-pic img{
     width: 100%;
     transform: scale(1);
     transition: 2s;  
 }
 
-.news-card:hover img{
+.news-card-container .news-card:hover img{
     transform: scale(1.3);
 }
 
-.news-card .tag{
+.news-card-container .news-card .tag{
     width: 75px;
     height: 15px;
     font-size: 16px;
@@ -148,7 +152,7 @@ header nav .shopping-cart a:hover{
     margin: 3px 3px;
 }
 
-.news-card:hover .tag{
+.news-card-container .news-card:hover .tag{
     color: #FFE75F;
     text-shadow: 3px 3px 10px #000;
 }
@@ -357,22 +361,23 @@ header nav .shopping-cart a:hover{
 }
 
 .feedback-container{
-    width: 1200px;
-    margin: auto;
+    width: 990px;
+    height: 330px;
+    margin: 0 auto 30px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .feedback-card{
     box-sizing: border-box;
     width: 300px;   
     height: 300px;
-    margin: 30px 18px 30px 18px;
+    margin: 30px 10px;
     border-radius: 2%;
-    border: 5px solid #B28850;
-    transition: 1s;
+    border: 5px solid #b28850;
+    transition: 0.8s ease;
 }
 
 .feedback-card .txt{
@@ -398,4 +403,5 @@ header nav .shopping-cart a:hover{
     font-size: 14px;
     color: #fff;
     text-align: right;
+    padding-right: 5px;
 }
