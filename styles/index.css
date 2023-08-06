@@ -68,6 +68,7 @@ header nav .shopping-cart a:hover{
     animation: lights 5s 750ms linear infinite;
 }
 
+
 /* 活動卡片區開始 */
 .news{
     width: 100%;
@@ -88,7 +89,6 @@ header nav .shopping-cart a:hover{
     width: 1200px;
     margin: auto;
     display: flex;
-    /* flex-wrap: wrap; */
     position: relative;
 }
 
@@ -162,8 +162,8 @@ header nav .shopping-cart a:hover{
 .news-card-container .arrow{
     width: 50px;
     height: 50px;
-    }
-    
+}
+
 .arrow .arrow-left,
 .arrow .arrow-right{
     position: absolute;
@@ -184,11 +184,11 @@ header nav .shopping-cart a:hover{
 .arrow-right .fa-solid{
     font-size: 50px;
 }
-    /* 活動卡片區按鈕結束 */
+/* 活動卡片區按鈕結束 */
 
 /* 首頁影片區 */
 .draft-beer{
-    width: 100%;    
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -290,7 +290,7 @@ header nav .shopping-cart a:hover{
 
 /* 關於釀酒廠 */
 .brewery{
-    width: 100%;    
+    max-width: 100%;    
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -299,16 +299,17 @@ header nav .shopping-cart a:hover{
 
 .brewery .pic{
     max-width: 50%;
+    max-height: 100%;
 }
 
 .brewery .pic img{
-    width: 100%;
-    height: 100%;
+    max-width:100%;
+    max-height: 100%;
     vertical-align: middle;
 }
 
 .brewery .txt{
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     padding: 20px 30px;
 }
@@ -359,25 +360,49 @@ header nav .shopping-cart a:hover{
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
+.sliderBoard{
+    width: 300px; /* banner可視範圍 */
+	height: 300px;
+	margin: 50px auto;
+	overflow: hidden; /* 超出範圍的要隱藏 */
+}
 
 .feedback-container{
-    width: 990px;
+    width: 1550px;
     height: 330px;
-    margin: 0 auto 30px;
+    /* margin: 0 auto 30px; */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    overflow: hidden;
+    position: relative;
+    animation: slider 15s infinite;
+}
+
+@keyframes slider {
+    0%{
+		left: 0px;
+	}
+	20%{
+		left: -315px;
+	}
+	50%{
+		left: -630px;
+	}
+	70%{
+		left: -945px;
+	}
+	90%{
+		left: -1250px;
+	}  
 }
 
 .feedback-card{
     box-sizing: border-box;
     width: 300px;   
     height: 300px;
-    margin: 30px 10px;
+    /* margin: 30px 10px; */
+    margin: 0 5px;
     border-radius: 2%;
     border: 5px solid #b28850;
-    transition: 0.8s ease;
 }
 
 .feedback-card .txt{
@@ -405,3 +430,68 @@ header nav .shopping-cart a:hover{
     text-align: right;
     padding-right: 5px;
 }
+
+/* ------RWD------- */
+@media screen and (max-width:768px) {
+    /* 首頁banner */
+   .top{
+        height: 30vh;
+        overflow: hidden;
+    }
+    .top-mask{
+        height: 30vh;
+    }
+    
+    .top .top-banner-txt{
+        font-size: 20px;
+    }
+    .news h1,.food h2{
+        font-size: 25px;
+        margin: 50px 0 20px ;
+    }
+    
+    .news-card-container{
+        width: 50%;
+        justify-content: center;
+    }
+    
+    .news-card-container .news-card .card-txt{
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+    
+    .news-card-container .news-card .tag{
+        font-size: 14px;
+        top: 30%;
+    }
+    /* news card, arrow and video */
+    .news-card:nth-child(2),
+    .news-card:nth-child(3),
+    .news-card:nth-child(4),
+    .arrow,.draft-beer, .draft-beer h2,.draft-beer-video
+    {
+        display: none;
+    }
+    /* 釀酒廠 */
+    .brewery{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .brewery .pic{
+        padding-top: 10px;
+        align-self: center;
+    }
+    .brewery .txt{
+        font-size: 18px;
+    }
+    .brewery .pic .link a{
+        font-size: 14px;
+    }
+    .brewery p:nth-child(2),
+    .brewery p:nth-child(3),
+    .brewery p:nth-child(4){
+        display: none;
+    }
+
+} 

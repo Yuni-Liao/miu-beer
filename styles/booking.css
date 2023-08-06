@@ -1,34 +1,34 @@
     /* 地址區開始 */
 article {
-        width: 1200px;
-        margin: 0 auto 30px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 article h1 {
-    width: 100%;
+    max-width: 100%;
     color: #FFF;
     font-size: 100px;
     letter-spacing: 5px;
     text-align: center;
-        margin: 50px 0 30px 0;
-        text-shadow: 15px 15px 10px #000;
+    margin: 50px 0 30px 0;
+    text-shadow: 15px 15px 10px #000;
 }
 article section {
-        width: 50%;
+    max-width: 50%;
 }
 article section .miuking,
 article section .miuqueen {
-        width: 90%;
-        margin: 20px 0;
+    max-width: 90%;
+    margin: 20px 0;
 }
 
 article section .miuking .pic img,
 article section .miuqueen .pic img {
-        width: 100%;
-        border-radius: 6px;
+    max-width: 100%;
+    border-radius: 6px;
 }
 
 article section .miuking h2,
@@ -89,7 +89,7 @@ article .booking select {
 }
 
 article .booking button {
-    width: 80px;
+    max-width: 30%;
     padding: 5px;
     background-color: transparent;
     border: 0px;
@@ -104,5 +104,50 @@ article .booking button span {
 }
 /* 表單區結束 */
 
+@media screen and (max-width:768px) {
 
+    article h1 {
+        padding: 20px;
+        font-size: 48px;
+        margin: 10px 0;
+    }
+    
+    article section {
+        max-width: 80%;
+    }
+
+    article section .miuking h2,
+    article section .miuqueen h2{
+    font-size: 22px;
+    letter-spacing: 0px;
+    padding: 5px 0;
+    }
+
+    article section .miuking h2::after,
+    article section .miuqueen h2::after {
+    display: none;
+    }
+
+    article section .miuking address,
+    article section .miuqueen address {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    white-space: pre-line;
+    }
+
+    article section .miuking,
+    article section .miuqueen {
+    max-width: 100%;
+    }
+
+    article .booking div label span{
+    display: block;
+    padding: 10px 0;
+    }
+
+    article .booking button{
+    margin-top: 10px;
+    }
+}
 

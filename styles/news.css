@@ -1,60 +1,26 @@
-/* 頂端banner與文字開始 */
+    /* 頂部標題開始 */
 .top{
-    width: 100%;
-    height: 450px;
-    background-image: url(../images/news_bg.jpg);
-    background-size: cover;
-    position: relative;
-}
-
-.top-mask{
-    background-color: #0008;
-    width: 100%;
-    height: 450px;
-    position: absolute;
-}
-
-.top .top-mask span{
-    display: block;
-    color: #fff;
-    font-size: 30px;
-    padding: 200px 100px;
-    animation: lights 5s 750ms linear infinite;
-}
-    /* 頂端banner與文字結束 */
-    /* 標題區開始 */
-.news-mask{
-    background: rgba(217, 217, 217, 0.51);
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
+    width: 1200px;
+    margin: auto;
 }
     
-.news-mask h1{
-    font-size: 50px;
-    color: transparent;
-    -webkit-text-stroke:3px rgba(0, 0, 0, 0.13);
-    margin: auto;
-    letter-spacing: 2px;
-    position: relative;
+.top h1{
+    color: #FFF;
+    font-size: 100px;
+    font-weight:bloder;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 15px 15px 10px #010000;
 }
-.news-mask span{
-    color: #000;
-    font-size: 22px;
-    position: absolute;
-    left: 20%;
-    top: 30%;
-    margin: auto;
-}
-    /* 標題區結束 */
+    /* 頂部標題結束 */
     /* 卡片區開始 */
 .news-card-container{
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    margin: 50px auto;
     content: '';
 }
 
@@ -92,6 +58,10 @@
 
 .news-card:hover a span{
     color: #ffe75f;
+}
+
+.news-card:hover{
+    box-shadow: 10px 10px 10px #000;
 }
 
 .news-card img{
