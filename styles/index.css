@@ -10,6 +10,7 @@ header nav{
 header nav ul li {
     display: inline;
 }
+
 header nav ul li a{
     text-align: center;
     text-decoration: none;
@@ -23,6 +24,7 @@ header nav ul li a{
 header nav .pic{
     padding: 10px;
 }
+
 header nav .pic img {
     width: 170px;
     vertical-align: middle;
@@ -68,10 +70,9 @@ header nav .shopping-cart a:hover{
     animation: lights 5s 750ms linear infinite;
 }
 
-
 /* 活動卡片區開始 */
 .news{
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -85,8 +86,8 @@ header nav .shopping-cart a:hover{
     text-shadow: 3px 3px 10px #000;
 }
 
-.news-card-container{
-    width: 1200px;
+/* .news-card-container{
+    max-width: 1200px;
     margin: auto;
     display: flex;
     position: relative;
@@ -94,8 +95,8 @@ header nav .shopping-cart a:hover{
 
 .news-card-container .news-card{
     box-sizing: border-box;
-    width: 300px;   
-    height: 300px;
+    max-width: 300px;   
+    max-height: 300px;
     margin: 18px;
     border-radius: 2%;
     border: 5px solid #B28850;
@@ -132,7 +133,7 @@ header nav .shopping-cart a:hover{
 }
 
 .news-card-container .news-card .card-pic img{
-    width: 100%;
+    max-width: 100%;
     transform: scale(1);
     transition: 2s;  
 }
@@ -155,11 +156,11 @@ header nav .shopping-cart a:hover{
 .news-card-container .news-card:hover .tag{
     color: #FFE75F;
     text-shadow: 3px 3px 10px #000;
-}
+} */
 /* 活動卡片區結束 */
 
     /* 活動卡片區按鈕 */
-.news-card-container .arrow{
+/* .news-card-container .arrow{
     width: 50px;
     height: 50px;
 }
@@ -183,7 +184,7 @@ header nav .shopping-cart a:hover{
 .arrow-left .fa-solid,
 .arrow-right .fa-solid{
     font-size: 50px;
-}
+} */
 /* 活動卡片區按鈕結束 */
 
 /* 首頁影片區 */
@@ -226,7 +227,7 @@ header nav .shopping-cart a:hover{
     text-shadow: 3px 3px 10px #000;
 }
 
-.food-card-container{
+/* .food-card-container{
     width: 1200px;
     margin: auto;
     display: flex;
@@ -272,7 +273,7 @@ header nav .shopping-cart a:hover{
 }
 
 .food-card .card-pic img{
-    width: 100%;
+    max-width: 100%;
     transform: scale(1);
 }
 
@@ -286,11 +287,11 @@ header nav .shopping-cart a:hover{
 .food-card:hover .tag{
     color: #FFE75F;
     text-shadow: 3px 3px 10px #000;
-}
+} */
 
 /* 關於釀酒廠 */
 .brewery{
-    max-width: 100%;    
+    width: fit-content;    
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -298,8 +299,7 @@ header nav .shopping-cart a:hover{
 }
 
 .brewery .pic{
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 100%;
 }
 
 .brewery .pic img{
@@ -346,7 +346,7 @@ header nav .shopping-cart a:hover{
 
 /* MIU的好評 */
 .feedback{
-    width: 100%;    
+    max-width: 100%;    
     margin: auto;
     display: flex;
     justify-content: center;
@@ -370,7 +370,6 @@ header nav .shopping-cart a:hover{
 .feedback-container{
     width: 1550px;
     height: 330px;
-    /* margin: 0 auto 30px; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -399,7 +398,6 @@ header nav .shopping-cart a:hover{
     box-sizing: border-box;
     width: 300px;   
     height: 300px;
-    /* margin: 30px 10px; */
     margin: 0 5px;
     border-radius: 2%;
     border: 5px solid #b28850;
@@ -411,10 +409,6 @@ header nav .shopping-cart a:hover{
     padding: 5px 10px;
     line-height: 1.5;
     text-align: center;
-}
-
-.feedback-card .txt{
-    color: #fff;
     text-shadow: 3px 3px 10px #000;
 }
 
@@ -428,70 +422,162 @@ header nav .shopping-cart a:hover{
     font-size: 14px;
     color: #fff;
     text-align: right;
-    padding-right: 5px;
+    padding: 5px;
 }
 
 /* ------RWD------- */
-@media screen and (max-width:768px) {
-    /* 首頁banner */
-   .top{
-        height: 30vh;
-        overflow: hidden;
+@media screen and (max-width:1200px){
+    .top{
+        height: 50vh;
     }
     .top-mask{
-        height: 30vh;
+        height: 50vh;
     }
     
     .top .top-banner-txt{
-        font-size: 20px;
+    font-size: 28px;
+    line-height: 1.5;
     }
-    .news h1,.food h2{
-        font-size: 25px;
+
+    .news h1,
+    .food h2,
+    .feedback h2{
+        font-size: 26px;
         margin: 50px 0 20px ;
+        padding: 5px;
     }
-    
-    .news-card-container{
-        width: 50%;
-        justify-content: center;
-    }
-    
-    .news-card-container .news-card .card-txt{
-        font-size: 18px;
-        padding: 20px 10px;
-    }
-    
-    .news-card-container .news-card .tag{
-        font-size: 14px;
-        top: 30%;
-    }
-    /* news card, arrow and video */
-    .news-card:nth-child(2),
-    .news-card:nth-child(3),
-    .news-card:nth-child(4),
-    .arrow,.draft-beer, .draft-beer h2,.draft-beer-video
-    {
-        display: none;
-    }
+
     /* 釀酒廠 */
     .brewery{
-        max-width: 100%;
+        max-width: max-content;
         display: flex;
         flex-direction: column;
     }
+
     .brewery .pic{
+        min-width: 80%;
         padding-top: 10px;
         align-self: center;
     }
+
     .brewery .txt{
         font-size: 18px;
     }
-    .brewery .pic .link a{
+
+    .brewery .txt .link{
         font-size: 14px;
+        padding: 5px;
     }
-    .brewery p:nth-child(2),
-    .brewery p:nth-child(3),
-    .brewery p:nth-child(4){
+
+    .brewery .txt p:nth-child(2),
+    .brewery .txt p:nth-child(3),
+    .brewery .txt p:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .top{
+        height: 50vh;
+    }
+    .top-mask{
+        height: 50vh;
+    }
+    
+    .top .top-banner-txt{
+    font-size: 28px;
+    line-height: 1.5;
+    }
+
+    .news h1,
+    .food h2,
+    .feedback h2{
+        font-size: 26px;
+        margin: 50px 0 20px ;
+        padding: 5px;
+    }
+
+    /* 釀酒廠 */
+    .brewery{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brewery .pic{
+        min-width: 80%;
+        padding-top: 10px;
+        align-self: center;
+    }
+
+    .brewery .txt{
+        font-size: 18px;
+    }
+
+    .brewery .txt .link{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* 首頁banner */
+    .top{
+        height: 30vh;
+        /* overflow: hidden; */
+    }
+
+    .top-mask{
+        height: 30vh;
+    }
+
+    .top .top-banner-txt{
+        font-size: 20px;
+        line-height: 1.5;
+        height: fit-content;
+    }
+
+    .news h1,
+    .food h2,
+    .feedback h2{
+        font-size: 25px;
+        margin: 20px;
+        padding: 5px;
+        height: fit-content;
+    }
+
+.draft-beer, 
+.draft-beer h2,
+.draft-beer-video
+    {
         display: none;
     }
 
+    /* 釀酒廠 */
+    .brewery{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brewery .pic{
+        min-width: 80%;
+        padding-top: 10px;
+        align-self: center;
+    }
+
+    .brewery .txt{
+        font-size: 18px;
+    }
+
+    .brewery .txt .link{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .brewery .txt p:nth-child(2),
+    .brewery .txt p:nth-child(3),
+    .brewery .txt p:nth-child(4){
+        display: none;
+    }
 } 

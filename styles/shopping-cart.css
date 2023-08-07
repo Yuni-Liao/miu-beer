@@ -1,28 +1,16 @@
-/* 購物車漢堡定位 */
-.burger-container{
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    margin-top: -5%;
-    margin-left: 95%;
-    border-radius: 25%;
-    position: fixed;
-    z-index: 3;
-}
-
-
 /* 購物車內容區開始 */
 .cart-container{
     background-color: #d9d9d9;
     margin: 150px auto 10px;
     padding: 30px;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     border-radius: 10px;
 }
+
 .cart-container .total{
     position: absolute;
     bottom: 5%;
@@ -30,16 +18,18 @@
     font-size: 18px;
     color: #333;
 }
+
 .cart-container .fa-cart-shopping {
-    width: 100%;
+    min-width: 100%;
     color: #333;
     font-size: 28px;
     padding-left: 20px;
     font-weight: bolder;
     text-shadow: 5px px px #000;
 }
+
 .cart-container .fa-solid h1{
-    display: inline;
+    display: inline-block;
     margin-left: 10px;
 }
 
@@ -51,36 +41,29 @@
 }
 
 .btn .next{
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
     background-color:#b28850;
     width: 40px;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #000;
-}
 
-.btn .next a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
 }
 
 .btn .back{
-    display: block;
+    display: inline-block;
     width: 40px;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
-}
-
-.btn .back a{
-    display: block;
     text-align: center;
     text-decoration: none;
     color: #b28850;
 }
-
 
 .cart{
     width: 600px;
@@ -109,6 +92,7 @@
 .cart .txt h2{
     font-weight: bold;
 }
+
 .cart .txt .order-btn{
     width: 200px;
     padding: 30px 0;
@@ -116,10 +100,10 @@
     color: #333;
     display: flex;
 }
+
 .cart .txt .order-btn i,
 .cart .txt .order-btn p{
     margin-right: 40px;
-    line-height: 50px;
 }
 
 .cart .order-btn p{
@@ -146,7 +130,6 @@
 /* 表單區開始 */
 .cart-container form{
         width: 350px;
-        /* height: 600px; */
         color: #333;
         font-size: 18px;
         background-color: #d9d9d9;
@@ -154,8 +137,61 @@
         padding: 50px 50px 50px 30px;
         border-left: 3px solid #999999;
 }
-
-.cart-container button{
-    margin: auto;
-} 
 /* 表單區結束 */
+
+
+/* RWD */
+@media screen and (max-width:768px) {
+    .cart-container{
+        margin: 30px auto 10px;
+        /* flex-direction: column; */
+    }
+    
+    .cart-container .fa-cart-shopping {
+        min-width: 50%;
+    }
+
+    .cart-container .total{
+        padding: 5px;
+    }
+    
+    .cart{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart .pic{
+        width: 22%;
+        padding: 10px 0 0;
+    }
+    
+    .cart .txt{
+        max-width: 80%;
+        padding: 5px;
+    }
+    
+    .cart .txt h2{
+        padding: 5px 17%;
+    }
+
+    .cart .txt h2 span{
+        display: none;
+    }
+
+    .cart .txt .order-btn{
+        padding: 0 5%;
+    }
+    
+    .cart .txt .order-btn i,
+    .cart .txt .order-btn p{
+        margin: 5px auto;
+        line-height: 1.5;
+    }
+
+    .cart-container form{
+        padding-left: 4%;
+        border-left: 0;
+    }
+    
+}

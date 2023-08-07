@@ -57,7 +57,7 @@ header nav .shopping-cart a:hover{
 .booking-btn{
     position: fixed;
     right: 3%;
-    top: 70%;
+    top: 67%;
     z-index: 3;
 }
 .booking-btn img{
@@ -100,11 +100,12 @@ header nav .shopping-cart a:hover{
     text-align: center;
     line-height: 30px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .marquee p{
     color: #333;
-    animation: marquee 20s -1s infinite linear;
+    animation: marquee 20s 0s infinite linear;
 }
 
 @keyframes marquee {
@@ -178,6 +179,11 @@ footer {
 
 /* tibame專題作品txt */
 footer .footer-pic p{ 
+    padding: 10px;
+    line-height: 1.25;
+    display: block;
+    text-align: center;
+    color: #eee;
     display: none;
 }
 
@@ -196,7 +202,7 @@ footer .footer-pic p{
 }
 
 .footer-icon {
-    width: 300px;
+    width: 18%;
     margin: 10px 0;
     position: relative;
     top: 20px;
@@ -269,6 +275,7 @@ footer .footer-pic p{
     color: #fff;
 }
 
+/* RWD */
 @media screen and (max-width:768px) {
 *{
     overflow-x: hidden;
@@ -281,16 +288,17 @@ header nav .pic{
     width: 50%;
 }
 
+.marquee{
+    width: max-content;
+    /* height: max-content; */
+}
+
 footer{
     height: 28vh;
 }
 
 footer .footer-pic p{
-    padding-top: 10px;
-    line-height: 1.25;
     display: block;
-    text-align: center;
-    color: #eee;
 }
 
 footer .footer-pic{
@@ -310,7 +318,7 @@ footer .footer-pic img{
 }
 
 .warning-box .drink {
-    padding: 10px 0;
+    padding: 5px;
     font-size: 20px;
 }
 .warning-box .tibame {

@@ -85,4 +85,9 @@ article h1{
     margin: 5px 0;
     box-shadow: 0px 0px 0px #000;
     }
+
+    .miuking .txt h2,
+    .miuqueen .txt h2{
+        align-self: center;
+    }
 }
