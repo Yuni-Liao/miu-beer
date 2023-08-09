@@ -13,7 +13,7 @@ $(function () {
     $('#content').width(divWidth * imgCount) //ul的寬度
 
     let index = 0
-    let timer = setInterval(moveToNext, 4000)
+    let timer = setInterval(moveToNext, 5000)
     $(`#contentButton li`).click(function () {
         clearInterval(timer)
         //清除計時器,不然用戶點擊後會馬上跳轉下張
@@ -27,7 +27,7 @@ $(function () {
         $(this).addClass('clicked')
         $(`#contentButton li`).not(this).removeClass('clicked')
 
-        timer = setInterval(moveToNext, 4000) //重啟計時器
+        timer = setInterval(moveToNext, 5000) //重啟計時器
     })
     function moveToNext() {
         if (index < imgCount - 1) { //要控制index輪播的範圍,

@@ -1,11 +1,11 @@
 /* 輪播圖區 */
-.image{
-	width: 100%;
-	height: 500px;
+.images{
+    width: 100%;
+    height: 500px;
 }
 
 #sliderBoard{ 
-	width: 60%;
+	width: 50%;
 	height: 550px;
 	margin: auto;
 	overflow: hidden;
@@ -22,6 +22,7 @@
 #contentButton{
 	text-align: center;
 	width: 100%;
+	/* height: 50px; */
 }
 
 #contentButton li{

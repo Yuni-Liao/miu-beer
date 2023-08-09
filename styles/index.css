@@ -1,48 +1,3 @@
-/* 選單 */
-/* header nav{
-    background-image: url('../images/footer_two.png');
-    background-size: cover;
-    padding: 0px 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a{
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    line-height: 100px;
-    margin: 0px 30px;
-    font-size: 1.25rem;
-    transition: .2s;
-}
-
-header nav .pic{
-    padding: 10px;
-}
-
-header nav .pic img {
-    width: 170px;
-    vertical-align: middle;
-}
-
-header nav .shopping-cart a{
-    color: #fff;
-    line-height: 100px;
-    margin: 0px 10px;
-    font-size: 1.25rem;
-}
-
-header nav ul a:hover,
-header nav .shopping-cart a:hover{
-    color: #b28850;
-} */
-/* 選單結束 */
-
 /* 首頁banner開始 */
 .top{
     width: 100%;
@@ -77,6 +32,7 @@ header nav .shopping-cart a:hover{
     display: flex;
     justify-content: center;
 }
+
 .news h1{
     color: #B28850;
     margin: 50px 0;
@@ -85,107 +41,6 @@ header nav .shopping-cart a:hover{
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
-
-/* .news-card-container{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    position: relative;
-}
-
-.news-card-container .news-card{
-    box-sizing: border-box;
-    max-width: 300px;   
-    max-height: 300px;
-    margin: 18px;
-    border-radius: 2%;
-    border: 5px solid #B28850;
-    position: relative; 
-}
-
-.news-card-container .side{
-    display: none;
-}
-
-.news-card-container .news-card a{
-    text-decoration: none;
-}
-
-.news-card-container .news-card .card-txt{
-    color: #fff;
-    font-size: 18px;
-    padding: 20px 10px;
-    line-height: 2;
-    text-align: center;
-}
-
-.news-card-container .news-card:hover .card-txt{
-    color: #fa0;
-    text-shadow: 3px 3px 10px #000;
-}
-
-.news-card-container .news-card .card-pic{
-    overflow: hidden;
-}
-
-.news-card-container .news-card::after{
-    content: '';
-}
-
-.news-card-container .news-card .card-pic img{
-    max-width: 100%;
-    transform: scale(1);
-    transition: 2s;  
-}
-
-.news-card-container .news-card:hover img{
-    transform: scale(1.3);
-}
-
-.news-card-container .news-card .tag{
-    width: 75px;
-    height: 15px;
-    font-size: 16px;
-    color: #fff;
-    position: absolute;
-    top: 64%;
-    left: 5px;
-    margin: 3px 3px;
-}
-
-.news-card-container .news-card:hover .tag{
-    color: #FFE75F;
-    text-shadow: 3px 3px 10px #000;
-} */
-/* 活動卡片區結束 */
-
-    /* 活動卡片區按鈕 */
-/* .news-card-container .arrow{
-    width: 50px;
-    height: 50px;
-}
-
-.arrow .arrow-left,
-.arrow .arrow-right{
-    position: absolute;
-    color:#B28850;
-}
-
-.arrow .arrow-left{
-    top:45%;
-    left: 5%;
-}
-
-.arrow .arrow-right{
-    top:45%;
-    right: 4.5%;
-}
-
-.arrow-left .fa-solid,
-.arrow-right .fa-solid{
-    font-size: 50px;
-} */
-/* 活動卡片區按鈕結束 */
 
 /* 首頁影片區 */
 .draft-beer{

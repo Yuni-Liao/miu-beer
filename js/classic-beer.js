@@ -83,6 +83,9 @@ function init() {
             }
         }
     }
+    //一開始要預設淡色拉格是顯示的
+    allBeerImgs[0].style.opacity = 1;
+    allBeerTxt[0].style.opacity = 1;
 };
 
 window.addEventListener("load", init, false);
