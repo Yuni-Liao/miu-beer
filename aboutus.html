@@ -8,29 +8,30 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/burger.css">
     <link rel="stylesheet" href="./styles/aboutus.css">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/miu.ico" />
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="pic">
+            <a href="index.html">
+                <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+            </a>
+        </div>
         <nav>
-            <div class="pic">
-                <a href="index.html">
-                    <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
-                </a>
-            </div>
             <ul>
                 <li>
                     <a href="./news.html">最新消息</a>
-
                 </li>
                 <li>
                     <a href="./aboutus.html">關於品牌</a>
-
                 </li>
                 <li>
                     <a href="./classic-beer.html">啤酒介紹</a>
@@ -45,12 +46,44 @@
                     <a href="location.html">美味據點</a>
                 </li>
             </ul>
-            <div class="shopping-cart">
-                <a href="./shopping-cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
         </nav>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul class="menu-list">
+                <li>
+                    <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                    <a href="./aboutus.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="./classic-beer.html">啤酒介紹</a>
+                </li>
+                <li>
+                    <a href="./food.html">美味料理</a>
+                </li>
+                <li>
+                    <a href="./takeout.html">我要外帶</a>
+                </li>
+                <li>
+                    <a href="location.html">美味據點</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 漢堡結束 -->
     </header>
     <!-- 立即訂位開始 -->
     <div class="booking-btn">
@@ -96,7 +129,7 @@
                     讓餐點與啤酒完美結合。<br>
                 </h2>
                 <p>
-                    以啤酒為中心，發展出品牌：『MIU BEER餐廳』<br>
+                    以啤酒為中心，發展品牌『MIU BEER餐廳』<br>
                     品味美食的藝術，源自於對美好滋味的追求。輕啜一口濃郁的啤酒，讓微醺的愉悅感籠罩心頭，彷彿與時光對話。現在，我們將這份美好延伸至餐桌上，打造一場啤酒與美食的盛宴。<br>
                 </p>
             </div>
@@ -137,30 +170,35 @@
     <section class="owned">
         <h3>FAMILY OWNED & OPERATED</h3>
         <div class="owned-card">
-            <div class="pic">
+            <div class="pic" id="andy" data-text="創辦人第二代Andy，力求做到最好，不讓家人失望">
                 <img src="./images/about_owner_andy_one.png" alt="經營者Andy">
             </div>
             <div class="txt">
                 <p>作為一名釀酒者，我的追求不僅僅停留在創造美味的酒品上，更在於追求品質的卓越。我注重每一個細節，從原材料的選擇、釀造過程的控制，到最終的品鑒評估，都力求做到最好。我相信只有對釀酒充滿熱情並堅持追求品質，才能釀出真正令人驚艷的佳釀。除此之外，我也喜歡與其他釀酒者交流分享，不斷學習成長。在這個不斷變化的釀酒界，我願意保持開放心態，不斷探索創新，為大家帶來更多驚喜。<span>----Andy
                         Smith</span>
                 </p>
+                <p class="andybyphone">作為一名釀酒者，我的追求不僅僅停留在創造美味的酒品上，更在於追求品質的卓越。<br><span>----Andy
+                        Smith</span></p>
             </div>
         </div>
         <div class="owned-card dad">
-            <div class="pic">
+            <div class="pic" id="john" data-text="創始人John，將經驗永續傳承，讓台灣人也能享有世界級美味">
                 <img src="./images/about_ouwner_daddy_one.png" alt="經營者父親">
             </div>
             <div class="txt">
                 <p>身為擁有多年釀酒經驗的行家，對於釀酒的每個細節都極為謹慎。我的釀酒之路始於熱愛，持續不斷地追求卓越使我成為一名技藝精湛的釀酒者。在這段旅程中，我學會了如何選擇最優質的原材料、精確地掌控釀造過程並創新酒品風味。我的釀酒作品時常受到肯定，這驅使我不斷挑戰自我，探索更多可能性。釀酒對我而言不僅是一項技藝，更是一種對美味的熱情與堅持。我期待將這份熱愛透過每一杯酒分享給更多喜愛品味的人們。
                     <span>----John Smith</span>
                 </p>
+                <p class="johnbyphone">我的釀酒作品時常受到肯定，這驅使我不斷挑戰自我，探索更多可能性。<br><span>----John
+                        Smith</span></p>
             </div>
+            <div id="theDiv"></div>
         </div>
     </section>
 
     <!-- 加入我們 開始 -->
     <article class="joinus">
-        <h3 class="joinus-title">JOIN US</h3>
+        <!-- <h3 class="joinus-title">JOIN US</h3> -->
         <div class="pic">
             <img src="./images/about_joinus.jpeg" alt="MIU Team">
         </div>
@@ -194,7 +232,6 @@
             <ul>
                 <li>
                     <a href="./news.html">最新消息</a>
-
                 </li>
                 <li>
                     <a href="./aboutus.html">關於品牌</a>
@@ -236,6 +273,7 @@
         </div>
     </div>
     <!-- footer結束 -->
+    <script src="./js/aboutus.js"></script>
 </body>
 
 </html>

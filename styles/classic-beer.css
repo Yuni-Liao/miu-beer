@@ -6,7 +6,7 @@
 
 .top h1{
     color: #FFF;
-    font-size: 100px;
+    font-size: 6.25rem;
     font-weight:bloder;
     letter-spacing: 5px;
     text-align: center;
@@ -113,7 +113,7 @@ section .content .icon img{
 
 section .content .icon .arrow{
     color:#b28850;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 section .content .more{
@@ -159,27 +159,13 @@ section .more:hover a{
 }
 .beer-container .beer .pic img{
     width: 80px;
-    opacity: .5;
-    transition: 1s;
 }
 
 .beer-container .beer .txt{
     text-align: center;
     margin: 3px 0;
     color: #fff;
-    opacity: 0;
-    transition: .3s;
-}
-
-.beer-container .beer .pic:hover img{
-    opacity: 1;
-    transition: .3s;
-}
-.beer-container .beer .pic:hover .txt{
-    margin: 3px 0;
-    opacity: 1;
-    transition: .3s;
-    text-align: center;
+    text-shadow: 3px 3px 10px #000;
 }
 
 .beer-container a{

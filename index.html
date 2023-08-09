@@ -8,21 +8,24 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/burger.css">
     <link rel="stylesheet" href="./styles/index.css">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/miu.ico" />
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="pic">
+            <a href="index.html">
+                <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+            </a>
+        </div>
         <nav>
-            <div class="pic">
-                <a href="index.html">
-                    <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
-                </a>
-            </div>
             <ul>
                 <li>
                     <a href="./news.html">最新消息</a>
@@ -43,13 +46,44 @@
                     <a href="location.html">美味據點</a>
                 </li>
             </ul>
-            <div class="shopping-cart">
-                <a href="./shopping-cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
         </nav>
-        <label for="menu-switch" class="backdrop"></label>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul class="menu-list">
+                <li>
+                    <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                    <a href="./aboutus.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="./classic-beer.html">啤酒介紹</a>
+                </li>
+                <li>
+                    <a href="./food.html">美味料理</a>
+                </li>
+                <li>
+                    <a href="./takeout.html">我要外帶</a>
+                </li>
+                <li>
+                    <a href="location.html">美味據點</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 漢堡結束 -->
     </header>
     <!-- 立即訂位開始 -->
     <div class="booking-btn">
@@ -223,8 +257,8 @@
             <p>釀酒是我們的藝術，獨特的風味是我們的靈感源泉。
                 我們將每一滴酒釀都視為對品味的極致追求，每一道工藝都體現著我們的匠心精神。
             </p>
-            <p>我們的釀酒師是這片土地上的藝術家，他們擁有豐富的經驗與熱情，以最嚴謹的工藝，用心釀造每一款啤酒。在這個神奇的酒窖裡，您可以感受釀酒的魔法，嗅到芬芳的香氣，品嚐無與倫比的風味。</p>
-            <p>我們的釀酒廠是一個開放的聖殿，您可以近距離觀賞釀酒的全過程，親身感受釀酒師的用心與技藝。無論您是啤酒愛好者、釀酒新手，還是尋找不一樣味覺體驗的冒險家，這裡都將成為您的啤酒天堂。</p>
+            <!-- <p>我們的釀酒師是這片土地上的藝術家，他們擁有豐富的經驗與熱情，以最嚴謹的工藝，用心釀造每一款啤酒。在這個神奇的酒窖裡，您可以感受釀酒的魔法，嗅到芬芳的香氣，品嚐無與倫比的風味。</p>
+            <p>我們的釀酒廠是一個開放的聖殿，您可以近距離觀賞釀酒的全過程，親身感受釀酒師的用心與技藝。無論您是啤酒愛好者、釀酒新手，還是尋找不一樣味覺體驗的冒險家，這裡都將成為您的啤酒天堂。</p> -->
             <p>在MIU BEER，我們秉持著對品質的堅持，對創意的追求，用心釀造屬於這片土地的獨一無二的啤酒。我們誠摯地邀請您踏進這個充滿激情的釀酒世界，一同探索啤酒的無限可能性！</p>
             <p>讓我們一起舉杯，共享這美好的釀酒之旅！</p>
             <div class="link">
@@ -304,7 +338,7 @@
     <!-- footer開始 -->
     <footer>
         <div class="footer-pic">
-            <a href="index.html" target="_blank">
+            <a href="index.html">
                 <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
             </a>
             <p>本網站為緯育TibaMe前端班第86期學員專題作品，<br>本平台僅供學習、展示之用。</p>
@@ -354,8 +388,7 @@
         </div>
     </div>
     <!-- footer結束 -->
-
-    <script src="./js/index.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 
 </html>

@@ -8,29 +8,30 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/burger.css">
     <link rel="stylesheet" href="./styles/news.css">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/miu.ico" />
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="pic">
+            <a href="index.html">
+                <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+            </a>
+        </div>
         <nav>
-            <div class="pic">
-                <a href="index.html">
-                    <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
-                </a>
-            </div>
             <ul>
                 <li>
                     <a href="./news.html">最新消息</a>
-
                 </li>
                 <li>
                     <a href="./aboutus.html">關於品牌</a>
-
                 </li>
                 <li>
                     <a href="./classic-beer.html">啤酒介紹</a>
@@ -45,12 +46,44 @@
                     <a href="location.html">美味據點</a>
                 </li>
             </ul>
-            <div class="shopping-cart">
-                <a href="./shopping-cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
         </nav>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul class="menu-list">
+                <li>
+                    <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                    <a href="./aboutus.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="./classic-beer.html">啤酒介紹</a>
+                </li>
+                <li>
+                    <a href="./food.html">美味料理</a>
+                </li>
+                <li>
+                    <a href="./takeout.html">我要外帶</a>
+                </li>
+                <li>
+                    <a href="location.html">美味據點</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 漢堡結束 -->
     </header>
     <!-- 立即訂位開始 -->
     <div class="booking-btn">
@@ -74,6 +107,13 @@
                     上班族小確幸！平日午餐來店
                     享小杯啤酒任選一杯，聚會首選 Miu Beer！
                 </span>
+                <span>
+                    感受上班的愜意時光，平日午餐特惠來襲！<br>
+                    只要來用餐即贈小杯啤酒不限口味一杯 🍺
+                    趕快撥打電話訂位<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
+                </span>
             </a>
             <div class="hot"><span>HOT</span></div>
         </div>
@@ -83,6 +123,13 @@
                 <span>
                     一起體驗精釀啤酒的奧妙吧!
                 </span>
+                <span>
+                    精釀啤酒小教室開放囉🌞<br>
+                    預約上課了解釀造過程，體驗一日釀酒師生活<br>
+                    趕快撥打電話預約<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
+                </span>
             </a>
         </div>
         <div class="news-card">
@@ -90,6 +137,13 @@
                 <img src="./images/news_friend.png" alt="好友推薦">
                 <span>
                     好友揪好友，一起涼一下！
+                </span>
+                <span>
+                    夏日炎炎，揪好友一起來用餐🍻<br>
+                    人數滿四人且當日消費滿兩千即可打九折<br>
+                    趕快撥打電話預約<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
                 </span>
             </a>
             <div class="new"><span>NEW</span></div>
@@ -100,6 +154,13 @@
                 <span>
                     上班辛苦了！<br>平日午間提供商業午餐，一起chill一下！
                 </span>
+                <span>
+                    感受上班的雙人愜意時光，平日午餐特惠來襲！<br>
+                    午間套餐，三菜附兩杯小啤酒只要 688 元 🧡
+                    趕快撥打電話訂位<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
+                </span>
             </a>
         </div>
         <div class="news-card">
@@ -107,6 +168,13 @@
                 <img src="./images/news_beercup.png" alt="啤酒大賽">
                 <span>
                     每週五晚間八點，參加啤酒大賽，第一名可得啤酒券套票組喲！
+                </span>
+                <span>
+                    啤酒大賽每個月第一個星期五開賽啦👏<br>
+                    冠軍可得兩千元餐券及五張大杯啤酒券！<br>
+                    趕快撥打電話訂位<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
                 </span>
             </a>
             <div class="hot"><span>HOT</span></div>
@@ -117,8 +185,21 @@
                 <span>
                     你知道嗎?啤酒花其實不是花！
                 </span>
+                <span>
+                    啤酒花有獎徵答來啦~<br>
+                    你了解啤酒花嗎? 知道用途嗎?<br>
+                    趕快撥打電話報名有獎徵答，領獎勵😍<br>
+                    貓皇店 03-6666-9466<br>
+                    貓后店 03-6666-5966
+                </span>
             </a>
         </div>
+    </div>
+    <!-- 彈窗用的 -->
+    <div class="box">
+        <div class="box-content">
+        </div>
+        <button class="close-box">Close</button>
     </div>
     <!-- 內文區結束 -->
     <!-- footer開始 -->
@@ -176,6 +257,7 @@
         </div>
     </div>
     <!-- footer結束 -->
+    <script src="./js/news.js"></script>
 </body>
 
 </html>

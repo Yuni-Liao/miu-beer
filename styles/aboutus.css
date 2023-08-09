@@ -11,20 +11,20 @@
 
 /* 上半部開始 */
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding-top: 30px;
 }
 
 .container .slogn{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .container .slogn .txt h1{
-    width: 400px;
-    font-size: 28px;
+    max-width: 400px;
+    font-size: 1.75rem;
     color: #fff;
     line-height: 1.75;
     margin: 20px 0;
@@ -34,11 +34,11 @@
 }
 
 .container .slogn .txt p{
-    width: 400px;
+    max-width: 400px;
     color: #fff;
     line-height: 2;
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .container .aboutfood{
@@ -47,8 +47,8 @@
 }
 
 .container .aboutfood .txt h2{
-    width: 400px;
-    font-size: 28px;
+    max-width: 400px;
+    font-size: 1.75rem;
     color: #fff;
     line-height: 1.75;
     border-top: 3px solid #fff;
@@ -58,15 +58,15 @@
 }
 
 .container .aboutfood .txt p{
-    width: 400px;
+    max-width: 400px;
     color: #fff;
     line-height: 2;
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .container .slogn img{
-    width: 400px;
+    max-width: 400px;
     margin-top: 20px;
 }
 
@@ -89,12 +89,12 @@
 
 /* Our story & timeline開始 */
 .ourstory{
-    max-width: 100%;
+    min-width: 100%;
 }
 .ourstory .ourstory-title{
     color: #fff;
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
     margin: 50px 0;
@@ -120,11 +120,11 @@
 }
 
 .ourstory .timeline .event h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: lightsalmon;
 }
 .ourstory .timeline .event p {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .ourstory .timeline .event {
@@ -147,7 +147,7 @@
 }
 .ourstory .timeline .event:before {
     min-width: 120px;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: right;
     color: lightgrey;
 }
@@ -198,7 +198,7 @@
     color: #fff;
     margin: 50px auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
 }
@@ -228,38 +228,52 @@
 
 .owned .owned-card .txt p{
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 2;
 }
 
 .owned .owned-card .txt p span{
     color: #fff;
-    font-size: 18px;
+    font-size: 1.1rem;
     padding: 8px;
     line-height: 2;
 }
+
+.andybyphone,
+.johnbyphone{
+    display: none;
+}
+
+#theDiv{
+    border: 1px solid #ccc;
+    color: #aaa;
+    padding: 5px;
+    font: 14px Tahoma;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+}
 /* 加入我們 開始 */
 .joinus{
-    max-width: 100%;    
+    width: 100%;    
     margin: 120px auto 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: #b28850;
 }
 
-.joinus .joinus-title{
-    width: 100%;
+/* .joinus .joinus-title{
+    max-width: 100%;
     color: #fff;
     margin: -80px 0;
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
-}
+} */
 
 .joinus .pic{
-    width: 50%;
+    max-width: 50%;
 }
 
 .joinus .pic img{
@@ -269,12 +283,11 @@
 
 .joinus .txt{
     width: 45%;
-    margin: auto;
-    padding-top: 15px;
+    margin: 25px auto;
 }
 
 .joinus .txt h4{
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #333;
     line-height: 2;
     border-top: 3px solid #333;
@@ -283,7 +296,237 @@
 
 .joinus .txt p{
     color: #333;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 2;
-    margin: 25px 0;
+    margin: 20px 0 0;
+}
+
+/* RWD */
+@media screen and (max-width:1024px){
+    .container .slogn{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    .container .aboutfood{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    .container .slogn img{
+        max-width: 250px;
+        display: block;
+        margin:auto;
+    }
+    
+    .container .aboutfood img{
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+    
+    /* 啤酒分隔線 */
+    .little{
+        padding: 50px;
+        background-image: url(../images/about_littlebeer.png);
+        background-repeat: repeat-x;
+        margin: 5% 0;
+    }
+    
+    .ourstory{
+        display: none;
+    }
+
+    /* 經營者區開始 */
+    .owned{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .owned h3{
+        margin: 10px auto;
+        align-items: center;
+    }
+    
+    .owned .owned-card{
+        flex-direction: column;
+    }
+    
+    .owned .dad{
+        flex-direction: column;
+    }
+    
+    .owned .owned-card .pic{
+        max-width: 60%;
+        margin: auto;
+    }
+    .owned .owned-card .pic img{
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .owned .owned-card .txt{
+        max-width: 100%;
+        padding: 2%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .owned .owned-card .txt p:first-of-type{
+        display: none;
+    }
+
+    .andybyphone,
+    .johnbyphone{
+        display: block;
+        align-items: center;
+    }
+
+    /* 加入我們 開始 */
+    .joinus{
+        margin: 0 auto 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .joinus .pic{
+        max-width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .joinus .txt h4{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .joinus .txt{
+        min-width: 75%;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
+    .joinus .txt p:nth-child(2),
+    .joinus .txt p:nth-child(1){
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {    
+    /* 上半部開始 */
+    .container .slogn{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    .container .aboutfood{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 5%;
+    }
+    
+    .container .slogn img{
+        max-width: 250px;
+        display: block;
+        margin:auto;
+    }
+    
+    .container .aboutfood img{
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+    
+    /* 啤酒分隔線 */
+    .little{
+        padding: 50px;
+        background-image: url(../images/about_littlebeer.png);
+        background-repeat: repeat-x;
+        margin: 5% 0;
+    }
+    
+    .ourstory{
+        display: none;
+    }
+
+    /* 經營者區開始 */
+    .owned{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .owned h3{
+        padding: 2%;
+        margin: 10px auto;
+        align-items: center;
+    }
+    
+    .owned .owned-card{
+        flex-direction: column;
+    }
+    
+    .owned .dad{
+        flex-direction: column;
+    }
+    
+    .owned .owned-card .pic{
+        max-width: 60%;
+        margin: auto;
+    }
+    .owned .owned-card .pic img{
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .owned .owned-card .txt{
+        max-width: 100%;
+        padding: 2%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .owned .owned-card .txt p:first-of-type{
+        display: none;
+    }
+
+    .andybyphone,
+    .johnbyphone{
+        display: block;
+        align-items: center;
+        padding: 2%;
+    }
+
+    /* 加入我們 開始 */
+    .joinus{
+        margin: 0 auto 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .joinus .pic{
+        max-width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .joinus .txt h4{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    .joinus .txt{
+        min-width: 75%;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
+    .joinus .txt p:nth-child(1),
+    .joinus .txt p:nth-child(2){
+        display: none;
+    }
 }

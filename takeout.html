@@ -8,29 +8,31 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/burger.css">
     <link rel="stylesheet" href="./styles/takeout.css">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/miu.ico" />
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/takeout.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="pic">
+            <a href="index.html">
+                <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
+            </a>
+        </div>
         <nav>
-            <div class="pic">
-                <a href="index.html">
-                    <img src="./images/miu_logo_gold.svg" alt="Miu Beer">
-                </a>
-            </div>
             <ul>
                 <li>
                     <a href="./news.html">最新消息</a>
-
                 </li>
                 <li>
                     <a href="./aboutus.html">關於品牌</a>
-
                 </li>
                 <li>
                     <a href="./classic-beer.html">啤酒介紹</a>
@@ -45,12 +47,44 @@
                     <a href="location.html">美味據點</a>
                 </li>
             </ul>
-            <div class="shopping-cart">
-                <a href="./shopping-cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
         </nav>
+        <div class="shopping-cart">
+            <a href="./shopping-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <!-- 漢堡底色與線條 -->
+        <div class="burger-container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul class="menu-list">
+                <li>
+                    <a href="./news.html">最新消息</a>
+                </li>
+                <li>
+                    <a href="./aboutus.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="./classic-beer.html">啤酒介紹</a>
+                </li>
+                <li>
+                    <a href="./food.html">美味料理</a>
+                </li>
+                <li>
+                    <a href="./takeout.html">我要外帶</a>
+                </li>
+                <li>
+                    <a href="location.html">美味據點</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 漢堡結束 -->
     </header>
     <!-- 立即訂位開始 -->
     <div class="booking-btn">
@@ -61,10 +95,16 @@
     </div>
     <!-- 立即訂位結束 -->
     <!-- 中間公告區&Banner開始 -->
-    <div class="banner">
-        <div class="pic">
-            <img src="./images/takeout_banner.png" alt="#">
-        </div>
+    <div id="sliderBoard">
+        <ul id="content">
+            <li><img src="./images/takeout_banner.png" class="image"></li>
+            <li><img src="./images/takeout_banner_cup.jpeg" class="image"></li>
+            <li><img src="./images/takeout_banner_san.jpeg" class="image"></li>
+        </ul>
+        <ul id="contentButton"></ul>
+    </div>
+
+    <div id="contentButton">
     </div>
     <div class="description">
         <p>

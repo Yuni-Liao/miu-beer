@@ -13,16 +13,16 @@
 
 .cart-container .total{
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     left: 50%;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #333;
 }
 
 .cart-container .fa-cart-shopping {
     min-width: 100%;
     color: #333;
-    font-size: 28px;
+    font-size: 1.75rem;
     padding-left: 20px;
     font-weight: bolder;
     text-shadow: 5px px px #000;
@@ -86,7 +86,7 @@
     width: 300px;
     color:#333;
     padding: 50px 10px;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .cart .txt h2{
@@ -96,7 +96,7 @@
 .cart .txt .order-btn{
     width: 200px;
     padding: 30px 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: #333;
     display: flex;
 }
@@ -107,7 +107,7 @@
 }
 
 .cart .order-btn p{
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #3C3C5B;
 }
 .cart .txt span{
@@ -123,7 +123,7 @@
 }
 
 .order-btn .fa-trash-can{
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 50%;
 }
 /* 購物車內容區結束 */
@@ -131,7 +131,7 @@
 .cart-container form{
         width: 350px;
         color: #333;
-        font-size: 18px;
+        font-size: 1.1rem;
         background-color: #d9d9d9;
         line-height: 2.5;
         padding: 50px 50px 50px 30px;
@@ -141,10 +141,10 @@
 
 
 /* RWD */
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px){
     .cart-container{
         margin: 30px auto 10px;
-        /* flex-direction: column; */
+        border-radius: 0;
     }
     
     .cart-container .fa-cart-shopping {
@@ -162,12 +162,12 @@
     }
 
     .cart .pic{
-        width: 22%;
+        min-width: 30%;
         padding: 10px 0 0;
     }
     
     .cart .txt{
-        max-width: 80%;
+        max-width: 50%;
         padding: 5px;
     }
     
@@ -186,6 +186,62 @@
     .cart .txt .order-btn i,
     .cart .txt .order-btn p{
         margin: 5px auto;
+        line-height: 1.5;
+    }
+
+    .cart-container form{
+        padding-left: 4%;
+        border-left: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .cart-container{
+        margin: 30px auto 10px;
+        border-radius: 0;
+    }
+    
+    .cart-container .fa-cart-shopping {
+        min-width: 50%;
+    }
+
+    .cart-container .total{
+        padding: 5px;
+    }
+    
+    .cart{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart .pic{
+        min-width: 22%;
+        padding: 10px 0 0;
+    }
+    
+    .cart .txt{
+        max-width: 50%;
+        padding: 5px;
+    }
+    
+    .cart .txt h2{
+        padding: 5px 17%;
+    }
+
+    .cart .txt h2 span{
+        display: none;
+    }
+
+    .cart .txt .order-btn{
+        padding: 0 5%;
+    }
+    
+    .cart .txt .order-btn i,
+    .cart .txt .order-btn p{
+        margin: 0 5px;
+        padding: 5px 0;
         line-height: 1.5;
     }
 
