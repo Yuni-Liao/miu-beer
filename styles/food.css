@@ -223,7 +223,7 @@ h1 {
 
 .delicious-food .btn{
     border: 2px solid #b28850;
-    max-width: 5%;
+    max-width: 30%;
     padding: 10px;
     margin: 10px auto 20px;
     border-radius: 5px;
@@ -249,14 +249,15 @@ h1 {
 
 .delicious-food .phonemenubtn a{
     font-size: 1rem;
-    padding: 2%;
+    padding: 3%;
     display: block;
     text-align: center;
     text-decoration: none;
     color: #b28850;
+    display: none;
 }
 
-.delicious-food .phonemenubtn span{
+.delicious-food .phonemenubtn a p{
     display: none;
 }
 
@@ -273,12 +274,32 @@ h1 {
     }
 
     .delicious-food .box .box-content {
-        width: 65%;
+        width: 100%;
+        line-height: 1.5;
+        background-color: #C3C3D6;
+        padding: 3%;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px #000;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .delicious-food .box .close-box{
-        top: 50%;
-        right: 50%;
+        background-color: transparent;
+        color: #fff;
+        width: 50px;
+        padding: 5px;
+        border: 0;
+        border-radius: 6px;
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        right: 49%;
+        cursor: pointer;
     }
 /* 手機版菜單結束 */
 
@@ -444,9 +465,11 @@ h1 {
     }
 
         /* 經典啤酒區 */
-    .classic-beer .title .pic img{
-        display: none;
-    }
+        .classic-beer .title,
+        .classic-beer .title txt,
+        .classic-beer .title .pic img{
+            display: none;
+        }
     /* 美味料理 */
 
     .delicious-food .title .pic img,
@@ -466,14 +489,15 @@ h1 {
     
     .delicious-food .btn a{
         font-size: 1rem;
-        padding: 2%;
+        padding: 3%;
         display: block;
         text-align: center;
         text-decoration: none;
         color: #b28850;
     }
 
-    .delicious-food .phonemenubtn{
+    .delicious-food .phonemenubtn,
+    .delicious-food .phonemenubtn a{
         display: block;
     }
     
@@ -491,7 +515,26 @@ h1 {
         margin: 0 5%;
         font-size: 1.25rem;
     }
-    
+    /* 手機菜單彈窗 */
+    .delicious-food .box {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0008;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .delicious-food .box .box-content {
+        width: 60%;
+    }
+
+    .delicious-food .box .close-box{
+        top: 74%;
+        right: 48%;
+    }
 }
 @media screen and (max-width:767px) {
 
@@ -502,6 +545,8 @@ h1 {
     }
     
     /* 經典啤酒區 */
+    .classic-beer .title,
+    .classic-beer .title txt,
     .classic-beer .title .pic img{
         display: none;
     }
@@ -524,14 +569,15 @@ h1 {
     
     .delicious-food .btn a{
         font-size: 1rem;
-        padding: 2%;
+        padding: 3%;
         display: block;
         text-align: center;
         text-decoration: none;
         color: #b28850;
     }
 
-    .delicious-food .phonemenubtn{
+    .delicious-food .phonemenubtn,
+    .delicious-food .phonemenubtn a{
         display: block;
     }
 
@@ -563,11 +609,11 @@ h1 {
     }
 
     .delicious-food .box .box-content {
-        width: 20%;
+        width: 60%;
     }
 
     .delicious-food .box .close-box{
-        top: 60%;
+        top: 72%;
         right: 45%;
     }
 

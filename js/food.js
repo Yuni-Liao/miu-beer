@@ -1,10 +1,9 @@
-window.onload = function () {
-    if (window.innerWidth < 1024) {
-        var beerItems = document.querySelectorAll('.beer');
-        var nextButton = document.querySelector('.fa-arrow-right-long');
-        var backButton = document.querySelector('.fa-arrow-left-long')
-        var currentIndex = 0;
-
+function adjustLayout() {
+    let beerItems = document.querySelectorAll('.beer');
+    let nextButton = document.querySelector('.fa-arrow-right-long');
+    let backButton = document.querySelector('.fa-arrow-left-long')
+    let currentIndex = 0;
+    if (window.innerWidth < 1023) {
         // 隱藏第一個以外的啤酒
         for (var i = 1; i < beerItems.length; i++) {
             beerItems[i].style.display = 'none';
@@ -28,16 +27,27 @@ window.onload = function () {
             currentIndex = (currentIndex - 1 + beerItems.length) % beerItems.length;
 
             beerItems[currentIndex].style.display = 'block';
-        })
+        });
+    } else {
+        beerItems.forEach(items => {
+            items.style.display = 'block';
+        });
     }
 }
 
-// 手機菜單彈窗
+window.onload = adjustLayout;
+window.onresize = adjustLayout;
 
+
+// 手機菜單彈窗
 $(function () {
     $('.phonemenubtn').click(function (e) {
-        e.preventDefault()
-        var content = $(this).find('span').html();
+        e.preventDefault();
+        let content = '';
+        $(this).find('p').each(function () {
+            content += '<p>' + $(this).html() + '</p>';
+        });
+
         $('.box-content').html(content);
         $('.box').fadeIn();
     });
