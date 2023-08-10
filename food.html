@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/miu.ico" />
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -105,10 +107,10 @@
                 <span>CLASSIC BEER</span>
             </div>
         </div>
-        <div class="beer-container">
-            <div class="beer">
+        <ul class="beer-container">
+            <li class="beer">
                 <div class="pic">
-                    <img src="./images/beer_set_pa.png" alt="淡色拉格啤酒">
+                    <img src="./images/beer_set_pa.png" alt="淡色拉格啤酒" class="image">
                 </div>
                 <div class="txt">
                     <i class="fa-solid fa-thumbs-up">
@@ -117,10 +119,10 @@
                     </i>
                 </div>
                 <h3 class="name">淡色拉格啤酒</h3>
-            </div>
-            <div class="beer">
+            </li>
+            <li class="beer">
                 <div class="pic">
-                    <img src="./images/beer_set_pi.png" alt="皮爾森啤酒">
+                    <img src="./images/beer_set_pi.png" alt="皮爾森啤酒" class="image">
                 </div>
                 <div class="txt">
                     <i class="fa-solid fa-thumbs-up">
@@ -129,10 +131,10 @@
                     </i>
                 </div>
                 <h3 class="name">皮爾森啤酒</h3>
-            </div>
-            <div class="beer">
+            </li>
+            <li class="beer">
                 <div class="pic">
-                    <img src="./images/beer_set_sa.png" alt="淡色艾爾啤酒">
+                    <img src="./images/beer_set_sa.png" alt="淡色艾爾啤酒" class="image">
                 </div>
                 <div class="txt">
                     <i class="fa-solid fa-thumbs-up">
@@ -141,10 +143,10 @@
                     </i>
                 </div>
                 <h3 class="name">淡色艾爾啤酒</h3>
-            </div>
-            <div class="beer">
+            </li>
+            <li class="beer">
                 <div class="pic">
-                    <img src="./images/beer_set_st.png" alt="司陶特啤酒">
+                    <img src="./images/beer_set_st.png" alt="司陶特啤酒" class="image">
                 </div>
                 <div class="txt">
                     <i class="fa-solid fa-thumbs-up">
@@ -153,10 +155,10 @@
                     </i>
                 </div>
                 <h3 class="name">司陶特啤酒</h3>
-            </div>
-            <div class="beer">
+            </li>
+            <li class="beer">
                 <div class="pic">
-                    <img src="./images/beer_set_we.png" alt="小麥啤酒">
+                    <img src="./images/beer_set_we.png" alt="小麥啤酒" class="image">
                 </div>
                 <div class="txt">
                     <i class="fa-solid fa-thumbs-up">
@@ -165,7 +167,11 @@
                     </i>
                 </div>
                 <h3 class="name">小麥啤酒</h3>
-            </div>
+            </li>
+        </ul>
+        <div class="beer-btn">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <i class="fa-solid fa-arrow-right-long"></i>
         </div>
     </section>
     <!-- 圖片跑馬燈區 -->
@@ -208,6 +214,17 @@
         </div>
         <div class="btn">
             <a href="./takeout.html">外帶自取</a>
+        </div>
+        <div class="phonemenubtn">
+            <a href="#">內用菜單
+                <span>hello測試一下</span>
+            </a>
+        </div>
+        <!-- 彈窗用的 -->
+        <div class="box">
+            <div class="box-content">
+            </div>
+            <button class="close-box">Close</button>
         </div>
         <div class="menu-box">
             <div class="menu">
@@ -362,6 +379,7 @@
         </div>
     </div>
     <!-- footer結束 -->
+    <script src="./js/food.js"></script>
 </body>
 
 </html>
