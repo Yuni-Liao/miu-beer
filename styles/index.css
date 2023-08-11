@@ -154,17 +154,13 @@
 }
 
 .brewery .pic{
-    max-width: 100%;
-}
-
-.brewery .pic img{
-    max-width:100%;
-    max-height: 100%;
+    max-width: 50%;
     vertical-align: middle;
+    object-fit: contain;
 }
 
 .brewery .txt{
-    max-width: 70%;
+    max-width: 50%;
     margin: auto;
     padding: 20px 30px;
 }
@@ -423,4 +419,14 @@
         font-size: 1rem;
         padding: 5px;
     }
+
+    .brewery .txt p:nth-child(2),
+    .brewery .txt p:nth-child(3){
+        display: none;
+    }
+
+    .feedback-card .tag{
+        font-size: 0.9rem;
+    }
+
 } 

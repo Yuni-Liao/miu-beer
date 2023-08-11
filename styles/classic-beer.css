@@ -1,6 +1,6 @@
     /* 頂部標題開始 */
 .top{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -15,7 +15,7 @@
 }
     /* 頂部標題結束 */
 .main{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -24,13 +24,14 @@
     margin-bottom: 30px;
 }
 .main .bow img{
-    width: 300px;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
 
 .main .bow h2{
     color: #000;
+    font-size: 1.15rem;
     font-weight: bold;
     text-align: center;
     position: absolute;
@@ -39,23 +40,28 @@
 }
 
 section{
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
 }
 section .content .info-container{
-    width: 600px;
+    max-width: 600px;
     background-color: #0008;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
 }
+
 /* 啤酒介紹區 */
 section .side-beer{
     width: 250px;
 }
+
+section .side-beer img{
+    vertical-align: middle;
+}
+
 section .content .info-container .info{
     width: 600px;
 }
@@ -146,17 +152,20 @@ section .more:hover a{
 }
 
 .beer-container{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
+
 .beer-container .beer{
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .beer-container .beer .pic{
     margin: 50px 30px;
 }
+
 .beer-container .beer .pic img{
     width: 80px;
 }
@@ -178,4 +187,104 @@ section .more:hover a{
 
 .beer-container a:hover{
     color: #FFE75F;
+}
+
+/* RWD */
+@media screen and (max-width:1024px){
+    .top h1 {
+        padding: 20px;
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+    .main .bow h2{
+        font-size: 1.25rem;
+        margin: 2.5% 0;
+        padding: 1% 0;
+    }
+
+    section .side-beer{
+        width: 200px;
+    }
+
+    section .content .info-container{
+        max-width: 570px;
+    }
+
+    section .content .more{
+        width: 500px;
+    }
+
+    section .content .info-container .side-info span{
+        width: 25px;
+    }
+
+    
+}
+@media screen and (max-width:767px) {
+
+    .top h1 {
+        padding: 20px;
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+
+    .main .bow{
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .main .bow h2{
+        font-size: 1.15rem;
+        margin: 6% 0;
+        padding: 1% 0;
+    }
+
+    section .content .info-container .info{
+        padding: 1% 2%;
+    }
+    section .content .info-container .side-info{
+        line-height: 1.5;
+        padding: 0;
+    }
+    
+
+    section .content .info-container .side-info span{
+        width: 10px;
+    }
+
+    section{
+        flex-direction: column-reverse;
+    }
+
+    section .side-beer{
+        width: 200px;
+        margin: auto;
+        display: none;
+    }
+    
+    section .content .icon,
+    section .content .more{
+        display: none
+    }
+
+    .beer-container{
+        max-width: 100%;
+        padding: 0 3%;
+    }
+
+    .beer-container .beer .pic{
+        margin: 5% 0;
+    }
+
+    .beer-container .beer .pic img{
+        width: 60px;
+    }
+
+    .beer-container .beer .txt{
+        text-align: left;
+        font-size: 1rem;
+        padding: 7%;
+        margin: 0;
+    }
 }
