@@ -62,9 +62,10 @@ article section .miuqueen address {
 /* 表單區開始 */
 
 article .booking {
-    color: #fff;
+    color: #333;
     font-size: 1.1rem;
-    background-color: #b28850;
+    /* background-color: #b28850; */
+    background-color: #C3C3D6;
     border-radius: 6px;
     margin: 5% 0 2% 0;
     padding: 2%;
@@ -94,18 +95,19 @@ article .booking select {
 }
 
 article .booking button {
-    max-width: 30%;
-    padding: 5px;
+    max-width: 35%;
+    padding: 5%; 
     background-color: transparent;
-    border: 0px;
-    background-color: #fff;
+    border: 0;
+    background-color: #5E5E90;
     border-radius: 5px;
     align-self: center;
     box-shadow: 3px 3px 3px #333;
+    cursor: pointer;
 }
 
 article .booking button span {
-    color: #333;
+    color: #fff;
 }
 
 /* 表單區結束 */

@@ -1,4 +1,5 @@
 $(function () {
+    // 輪播圖
     let divWidth = $('#sliderBoard').width()
     let imgCount = $('#content li').length
     // alert(imgCount)
@@ -42,4 +43,22 @@ $(function () {
         $(`#contentButton li:eq(${index})`).addClass('clicked')
         $(`#contentButton li`).not(`:eq(${index})`).removeClass('clicked')
     }
+
+    // 增減餐點
+    $('.fa-circle-plus').click(function () {
+        let inputAdd = $(this).siblings('.selectbox');
+        let currentValue = parseInt(inputAdd.val())
+        inputAdd.val(currentValue + 1);
+    })
+
+    $('.fa-circle-minus').click(function () {
+        let inputRemove = $(this).siblings('.selectbox');
+        let lowValue = parseInt(inputRemove.val())
+
+        if (lowValue == '0') {
+            inputRemove.val(0);
+        } else {
+            inputRemove.val(lowValue - 1);
+        }
+    })
 });
