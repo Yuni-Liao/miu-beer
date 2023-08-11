@@ -174,31 +174,8 @@
             <i class="fa-solid fa-arrow-right-long"></i>
         </div>
     </section>
-    <!-- 圖片跑馬燈區 -->
-    <div class="picmarquee">
-        <div class="view">
-            <div class="pic-container">
-                <div class="pic">
-                    <img src="./images/foodcat_miu.png" alt="店貓MiuMiu">
-                </div>
-                <div class="pic">
-                    <img src="./images/food_beerbar.jpg" alt="啤酒吧台">
-                </div>
-                <div class="pic">
-                    <img src="./images/foodcat_kao.png" alt="店貓年糕">
-                </div>
-                <div class="pic">
-                    <img src="./images/food_waiter.jpg" alt="店員寫真">
-                </div>
-                <div class="pic">
-                    <img src="./images/foodcat_fin.png" alt="店貓冬粉">
-                </div>
-                <div class="pic">
-                    <img src="./images/food_beer.png" alt="啤酒寫真">
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- 啤酒分隔線 -->
+    <div class="little"></div>
     <!-- 美味料理區開始 -->
     <section class="delicious-food">
         <div class="title">
@@ -217,6 +194,7 @@
         </div>
         <div class="phonemenubtn">
             <a href="#">內用菜單
+                <p>精選菜單</p>
                 <p>無肉不歡拼盤
                     <i class="fa-solid fa-dollar-sign">990</i>
                 </p>
@@ -265,9 +243,10 @@
             </div>
             <button class="close-box">Close</button>
         </div>
+        <!-- 電腦菜單 -->
         <div class="menu-box">
             <div class="menu">
-                <div class="front">
+                <div class="front page" id="front">
                     <img src="./images/menu_bg.png" alt="菜單圖片">
                     <div class="logo">
                         <img src="./images/miu_logo_menu.svg" alt="MIU BEER">
@@ -281,7 +260,7 @@
                         <span>性感貓咪</span>
                     </div>
                 </div>
-                <div class="pageone">
+                <div class="pageone page" id="pageone">
                     <img src="./images/menu_bg.png" alt="菜單圖片">
                     <ul>
                         <li>
@@ -319,14 +298,9 @@
                             <span>Classic Beer Set</span>
                             <i class="fa-solid fa-dollar-sign">520</i>
                         </li>
-                        <li class=".menu-back-btn">
-                            <a href="#">
-                                <i class="fa-solid fa-angles-left">上一頁</i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
-                <div class="pagetwo">
+                <div class="pagetwo page" id="pagetwo">
                     <img src="./images/menu_bg.png" alt="菜單圖片">
                     <ul>
                         <li>
@@ -355,9 +329,14 @@
                             <i class="fa-solid fa-dollar-sign">620</i>
                         </li>
                         <li>
-                            <h3>椒香雞肉炒時蔬</h3>
+                            <h3>雞肉炒時蔬</h3>
                             <span>Spicy Chicken Stir Fry</span>
                             <i class="fa-solid fa-dollar-sign">340</i>
+                        </li>
+                        <li class=".menu-back-btn">
+                            <a href="#" id="offmenu">
+                                <i class="fa-solid fa-circle-xmark"> 關閉菜單</i>
+                            </a>
                         </li>
                     </ul>
                 </div>

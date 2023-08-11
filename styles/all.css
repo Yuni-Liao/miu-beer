@@ -242,6 +242,7 @@ footer .footer-pic p{
     bottom: 0;
     position: fixed;
     background-color: #000;
+    z-index: 5;
 }
 
 .warning-box-txt {

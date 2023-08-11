@@ -274,11 +274,8 @@
 
 .joinus .pic{
     max-width: 50%;
-}
-
-.joinus .pic img{
-    width: 100%;
     vertical-align: middle;
+    object-fit: contain;
 }
 
 .joinus .txt{
