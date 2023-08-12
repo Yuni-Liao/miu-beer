@@ -105,26 +105,31 @@
     padding-bottom: 5px;
 }
 
-.food-card-container .card .btn {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    color: #666;
-}
-
 .food-card-container .card .btn .fa-dollar-sign span{
     padding-left: 5px;
     letter-spacing: 1.5px;
     color: #e00;
     margin-right: 5px;
+    line-height: 1.5;
 }
 
-.food-card-container .card .btn .count span{
-    margin: 0 10px;
+.food-card-container .card .btn {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px;
+    color: #666;
+}
+
+.food-card-container .card .btn .count{
+    text-align: center;
+    width: 35%;
+    line-height: 1.5;
+    align-self: center;
 }
 
 .food-card-container .card .btn .count .selectbox{
-    width: 10%;
+    width: 30%;
     text-align: center;
 }
 
@@ -138,7 +143,7 @@
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px #000;
+    box-shadow: 3px 3px 10px #000;
 }
 
 /* RWD */
@@ -196,12 +201,18 @@
         letter-spacing: 1.5px;
         font-size: 1rem;
         margin-bottom: 5px;
+        line-height: 1.5;
     }
     
-    .food-card-container .card .btn .count span{
-        margin: 0px;
-        padding: 10px;
-        letter-spacing: 0px;
+    .food-card-container .card .btn .count{
+        text-align: center;
+        width: 40%;
+        line-height: 1.5;
+    }
+    
+    .food-card-container .card .btn .count .selectbox{
+        width: 30%;
+        text-align: center;
     }
 
     .next-btn{
@@ -265,12 +276,18 @@
         letter-spacing: 1.5px;
         font-size: 1rem;
         margin-bottom: 5px;
+        line-height: 1.5;
     }
     
-    .food-card-container .card .btn .count span{
-        margin: 0px;
-        padding: 10px;
-        letter-spacing: 0px;
+    .food-card-container .card .btn .count{
+        text-align: center;
+        width: 60%;
+        line-height: 1.5;
+    }
+    
+    .food-card-container .card .btn .count .selectbox{
+        width: 35%;
+        text-align: center;
     }
 
     .next-btn{
