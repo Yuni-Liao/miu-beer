@@ -199,8 +199,9 @@ section .more:hover a{
 
     .main .bow h2{
         font-size: 1.25rem;
-        margin: 2.5% 0;
-        padding: 1% 0;
+        margin: 2% 0;
+        padding: 2.5% 0;
+        overflow-y: hidden;
     }
 
     section .side-beer{
@@ -235,9 +236,10 @@ section .more:hover a{
     }
 
     .main .bow h2{
-        font-size: 1.15rem;
-        margin: 6% 0;
-        padding: 1% 0;
+        font-size: 1.25rem;
+        margin: 5% 0;
+        padding: 4% 0;
+        overflow-y: hidden;
     }
 
     section .content .info-container .info{

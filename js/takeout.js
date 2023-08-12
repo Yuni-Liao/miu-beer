@@ -1,20 +1,31 @@
 $(function () {
     // 輪播圖
-    let divWidth = $('#sliderBoard').width()
+    let divWidth = newDivWidth();
+
+    function newDivWidth() {
+        return $('#sliderBoard').width()
+    }
+    // resize
+    $(window).resize(function () {
+        divWidth = newDivWidth();
+        $('#content li').width(divWidth) // li的寬度
+        $('#content').width(divWidth * imgCount) //ul的寬度
+        $('#content').css('left', -index * divWidth);
+    })
+
     let imgCount = $('#content li').length
-    // alert(imgCount)
 
     for (let i = 0; i < imgCount; i++) {
         $('#contentButton').append(`<li></li>`)
     }
 
     $('#contentButton li:first').addClass('clicked')
-
     $('#content li').width(divWidth) // li的寬度
     $('#content').width(divWidth * imgCount) //ul的寬度
 
     let index = 0
     let timer = setInterval(moveToNext, 5000)
+
     $(`#contentButton li`).click(function () {
         clearInterval(timer)
         //清除計時器,不然用戶點擊後會馬上跳轉下張
@@ -43,7 +54,7 @@ $(function () {
         $(`#contentButton li:eq(${index})`).addClass('clicked')
         $(`#contentButton li`).not(`:eq(${index})`).removeClass('clicked')
     }
-
+    // ---------------------
     // 增減餐點
     $('.fa-circle-plus').click(function () {
         let inputAdd = $(this).siblings('.selectbox');

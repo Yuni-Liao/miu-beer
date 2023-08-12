@@ -25,12 +25,10 @@
     animation: lights 5s 750ms linear infinite;
 }
 
-/* 活動卡片區開始 */
+/* 活動區開始 */
 .news{
     max-width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    margin: auto;    
 }
 
 .news h1{
@@ -40,6 +38,46 @@
     font-size: 1.75rem;
     letter-spacing: 10px;
     text-shadow: 3px 3px 10px #000;
+}
+
+.news ul{
+    max-width: 50%;
+    margin: auto;
+    color: #eee;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.news ul li{
+    font-size: 1.25rem;
+    margin: 1.5%;
+    color: #FFE75F
+}
+
+.news ul li:nth-child(1):after{
+    content: '推出全新的啤酒口味，各種選擇讓人愛不釋口';
+    border-bottom: 2px solid #b28850;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.news ul li:nth-child(2):after{
+    content: '正值秋季，Miu Beer 推出了限定版的月亮啤酒，以慶祝中秋節！';
+    border-bottom: 2px solid #b28850;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.news ul li:nth-child(3):after{
+    content: 'Miu Beer與知名日系品牌設計師合作，即將推出聯名款啤酒，敬請期待';
+    border-bottom: 2px solid #b28850;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.news ul li i{
+    margin-left: 0.5%;
 }
 
 /* 首頁影片區 */
@@ -66,14 +104,12 @@
 }
 /* 首頁影片區結束 */
 
-/* 食物卡片區開始 */
-.food{
-    width: 100%;    
+/* 貓咪區開始 */
+.cats{
+    max-width: 100%;    
     margin: auto;
-    display: flex;
-    justify-content: center;
 }
-.food h2{
+.cats h2{
     color: #B28850;
     margin: 50px 0;
     text-align: center;
@@ -82,67 +118,34 @@
     text-shadow: 3px 3px 10px #000;
 }
 
-/* .food-card-container{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.food-card a{
-    text-decoration: none;
-}
-
-.food-card{
-    box-sizing: border-box;
-    width: 300px;   
-    height: 300px;
-    margin: 18px;
-    border-radius: 2%;
-    border: 5px solid #B28850;
-    transition: 1s;
-}
-
-.food-card::after{
-    content: '';
-}
-
-.food-card:hover{
-    transform: scale(1.2);
-    text-shadow: 3px 3px 10px #000;
-}
-
-.food-card .card-txt{
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 10px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.food-card:hover .card-txt{
-    color: #fa0;
-    text-shadow: 3px 3px 10px #000;
-}
-
-.food-card .card-pic img{
+.cats .catheadshot{
     max-width: 100%;
-    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.cats .catheadshot .pic{
+    margin: 1%;
 }
 
-.food-card .tag{
-    width: 280px;
-    height: 15px;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
+
+.cats .catheadshot .pic h3{
+    font-size: 1.5rem;
 }
-.food-card:hover .tag{
-    color: #FFE75F;
-    text-shadow: 3px 3px 10px #000;
-} */
+
+.cats .catheadshot .pic p{
+    font-size: 1.1rem;
+}
+
+.cats .catheadshot .pic h3,
+.cats .catheadshot .pic p{
+    text-align: center;
+    line-height: 1.25;
+    color: #b28850;
+    margin: 1.5% 0;
+    text-shadow: 3px 3px 3px #000;
+}
+
 
 /* 關於釀酒廠 */
 .brewery{
@@ -215,7 +218,7 @@
     width: 300px; /* banner可視範圍 */
 	height: 300px;
 	margin: 50px auto;
-	overflow: hidden; /* 超出範圍的要隱藏 */
+	overflow: hidden; /*超出範圍的要隱藏*/
 }
 
 .feedback-container{
@@ -291,7 +294,7 @@
     }
 
     .news h1,
-    .food h2,
+    .cats h2,
     .feedback h2{
         font-size: 1.6rem;
         margin: 50px 0 20px ;
@@ -338,11 +341,38 @@
 
     .news h1,
     .food h2,
-    .feedback h2{
+    .feedback h2,
+    .draft-beer h2{
         font-size: 1.6rem;
         margin: 20px 0;
         padding: 5px;
     }
+
+    /* 貓咪區開始 */
+    .cats .catheadshot{
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .cats .catheadshot .pic{
+        margin: 2% auto;
+    }
+    .cats .catheadshot .pic h3,
+    .cats .catheadshot .pic p{
+        overflow: hidden;
+    }
+    
+    .news ul li{
+        margin: 5% 0;
+        color: #FFE75F;
+    }
+
+    .news ul li:nth-child(1):after,
+    .news ul li:nth-child(2):after,
+    .news ul li:nth-child(3):after{
+        color: #eee;
+    }
+
 
     /* 釀酒廠 */
     .brewery{
@@ -365,6 +395,10 @@
         font-size: 1rem;
         padding: 5px;
     }
+
+    .feedback-card .tag{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -384,12 +418,38 @@
     }
 
     .news h1,
-    .food h2,
+    .cats h2,
     .feedback h2{
         font-size: 1.5rem;
         margin: 10px;
         padding: 5px;
         height: fit-content;
+    }
+
+    .news ul li{
+        margin: 15% 0;
+        color: #FFE75F;
+    }
+
+    .news ul li:nth-child(1):after,
+    .news ul li:nth-child(2):after,
+    .news ul li:nth-child(3):after{
+        color: #eee;
+    }
+
+        /* 貓咪區開始 */
+
+    .cats .catheadshot{
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .cats .catheadshot .pic{
+        margin: 2% auto;
+    }
+    .cats .catheadshot .pic h3,
+    .cats .catheadshot .pic p{
+        overflow: hidden;
     }
 
     .draft-beer, 
