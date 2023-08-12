@@ -13,8 +13,11 @@ function adjustLayout() {
         nextButton.addEventListener('click', function () {
             if (!buttonClicked) {
                 buttonClicked = true;
-                // 隱藏目前顯示的啤酒
-                beerItems[currentIndex].style.display = 'none';
+                //先把所有酒都隱藏
+                beerItems.forEach(items => {
+                    items.style.display = 'none';
+                });
+
                 // 更新索引值，循環啤酒杯
                 currentIndex = (currentIndex + 1) % beerItems.length;
 
@@ -23,7 +26,7 @@ function adjustLayout() {
 
                 setTimeout(() => {
                     buttonClicked = false;
-                }, 500)
+                }, 300)
             }
         });
 
@@ -32,15 +35,19 @@ function adjustLayout() {
 
         backButton.addEventListener('click', function () {
             if (!buttonClicked) {
+
                 buttonClicked = true;
-                beerItems[currentIndex].style.display = 'none';
+                //先把酒都隱藏
+                beerItems.forEach(items => {
+                    items.style.display = 'none';
+                });
 
                 currentIndex = (currentIndex - 1 + beerItems.length) % beerItems.length;
 
                 beerItems[currentIndex].style.display = 'block';
                 setTimeout(() => {
                     buttonClicked = false;
-                }, 500)
+                }, 300)
             }
         });
     } else {
