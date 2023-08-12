@@ -72,18 +72,51 @@ article h1{
 
     /* 地址區結束 */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1024px){
+
     article h1 {
-    padding: 20px;
-    font-size: 3rem;
-    margin: 10px 0;
+        padding: 20px;
+        font-size: 3rem;
+        margin: 10px 0;
     }
+    
     .miuking,
     .miuqueen{
-    flex-direction: column;
-    padding: 20px;
-    margin: 5px 0;
-    box-shadow: 0px 0px 0px #000;
+        padding: 20px;
+        margin: 5px 0;
+        box-shadow: 0px 0px 0px #000;
+    }
+
+    .miuking .pic,
+    .miuqueen .pic{
+        width: 66%;
+    }
+    
+    .miuking .txt h2,
+    .miuqueen .txt h2{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    article h1 {
+        padding: 20px;
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+    .miuking,
+    .miuqueen{
+        flex-direction: column;
+        padding: 20px;
+        margin: 5px 0;
+        box-shadow: 0px 0px 0px #000;
+    }
+
+    .miuking .pic,
+    .miuqueen .pic{
+        width: 99%;
     }
 
     .miuking .txt h2,

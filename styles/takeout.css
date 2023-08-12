@@ -295,11 +295,11 @@
     
     .food-card-container .card .btn .count{
         text-align: right;
-        min-width: 60%;
+        max-width: 60%;
     }
     
     .food-card-container .card .btn .count .selectbox{
-        min-width: 25%;
+        min-width: 20%;
         text-align: center;
     }
 

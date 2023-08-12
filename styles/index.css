@@ -357,10 +357,6 @@
     .cats .catheadshot .pic{
         margin: 2% auto;
     }
-    .cats .catheadshot .pic h3,
-    .cats .catheadshot .pic p{
-        overflow: hidden;
-    }
     
     .news ul li{
         margin: 5% 0;
@@ -402,6 +398,7 @@
 }
 
 @media screen and (max-width:767px) {
+
     /* 首頁banner */
     .top{
         height: 30vh;
@@ -446,10 +443,6 @@
 
     .cats .catheadshot .pic{
         margin: 2% auto;
-    }
-    .cats .catheadshot .pic h3,
-    .cats .catheadshot .pic p{
-        overflow: hidden;
     }
 
     .draft-beer, 

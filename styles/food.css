@@ -509,7 +509,10 @@ h1 {
     }
 }
 @media screen and (max-width:767px) {
-
+    body *{
+        overflow: hidden;
+    }
+    
     h1 {
         padding: 20px;
         font-size: 3rem;

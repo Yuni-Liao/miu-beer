@@ -167,12 +167,12 @@
 
     .news-card{
         min-width: 20%;
-        overflow-y: hidden;
         margin: 10px;
     }
 }
 
 @media screen and (max-width:767px) {
+    
     .top h1 {
         padding: 20px;
         font-size: 3rem;
@@ -186,7 +186,6 @@
     
     .news-card{
         min-width: 20%;
-        /* overflow-y: hidden; */
         margin: 10px;
     }
 

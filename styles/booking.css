@@ -112,6 +112,8 @@ article .booking button span {
 
 /* 表單區結束 */
 
+/* RWD */
+
 @media screen and (max-width:767px) {
 
     article h1 {
