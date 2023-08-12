@@ -284,6 +284,16 @@ footer .footer-pic p{
 }
 
 /* RWD */
+@media screen and (max-width:1200px) {
+    header nav ul li a{
+        margin: 0 15px;
+    }
+
+    .footer-icon span {
+        display: none;
+    }
+}
+
 @media screen and (max-width:1024px){
     *{
         overflow-x: hidden;

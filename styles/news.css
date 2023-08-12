@@ -164,10 +164,17 @@
 
 /* RWD */
 @media screen and (max-width:1024px){
-
+    body *{
+        overflow: scroll;
+    }
     .news-card{
         min-width: 20%;
         margin: 10px;
+    }
+
+    .news-card a span{
+        max-width: 100%;
+        bottom: 20%;
     }
 
     .box .close-box{
@@ -177,7 +184,10 @@
 }
 
 @media screen and (max-width:767px) {
-    
+    body *{
+        overflow: scroll;
+    }
+
     .top h1 {
         padding: 20px;
         font-size: 3rem;
@@ -233,8 +243,17 @@
 }
 
 @media screen and (max-width:400px){
+    body *{
+        overflow: scroll;
+    }
+
     .news-card a span{
         max-width: 100%;
-        bottom: 50%;
+        bottom: 17%;
+    }
+
+    .box .close-box{
+        top: 62%;
+        right: 45%;
     }
 }
