@@ -54,9 +54,11 @@ header .shopping-cart a:hover{
 }
 /* 選單結束 */
 /* 漢堡選單 */
+
 header .burger-container{
     display: none;
 }
+
 /* 立即訂位開始 */
 .booking-btn{
     position: fixed;

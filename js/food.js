@@ -4,30 +4,44 @@ function adjustLayout() {
     let nextButton = document.querySelector('.fa-arrow-right-long');
     let backButton = document.querySelector('.fa-arrow-left-long')
     let currentIndex = 0;
-    if (window.innerWidth < 1023) {
+    let buttonClicked = false
+    if (window.innerWidth < 1024) {
         // 隱藏第一個以外的啤酒
         for (var i = 1; i < beerItems.length; i++) {
             beerItems[i].style.display = 'none';
         }
         nextButton.addEventListener('click', function () {
-            // 隱藏目前顯示的啤酒
-            beerItems[currentIndex].style.display = 'none';
-            // 更新索引值，循環啤酒杯
-            currentIndex = (currentIndex + 1) % beerItems.length;
+            if (!buttonClicked) {
+                buttonClicked = true;
+                // 隱藏目前顯示的啤酒
+                beerItems[currentIndex].style.display = 'none';
+                // 更新索引值，循環啤酒杯
+                currentIndex = (currentIndex + 1) % beerItems.length;
 
-            // 顯示下一個啤酒
-            beerItems[currentIndex].style.display = 'block';
+                // 顯示下一個啤酒
+                beerItems[currentIndex].style.display = 'block';
+
+                setTimeout(() => {
+                    buttonClicked = false;
+                }, 500)
+            }
         });
 
         // 預設顯示第一個啤酒
         beerItems[currentIndex].style.display = 'block';
 
         backButton.addEventListener('click', function () {
-            beerItems[currentIndex].style.display = 'none';
+            if (!buttonClicked) {
+                buttonClicked = true;
+                beerItems[currentIndex].style.display = 'none';
 
-            currentIndex = (currentIndex - 1 + beerItems.length) % beerItems.length;
+                currentIndex = (currentIndex - 1 + beerItems.length) % beerItems.length;
 
-            beerItems[currentIndex].style.display = 'block';
+                beerItems[currentIndex].style.display = 'block';
+                setTimeout(() => {
+                    buttonClicked = false;
+                }, 500)
+            }
         });
     } else {
         beerItems.forEach(items => {

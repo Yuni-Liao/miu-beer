@@ -447,7 +447,7 @@
 
     .draft-beer, 
     .draft-beer h2,
-    .draft-beer-video{
+    .draft-beer-video video{
         display: none;
     }
 
@@ -462,6 +462,10 @@
         min-width: 100%;
         padding-top: 0px;
         align-self: center;
+    }
+    
+    .brewery .txt h2{
+        font-size: 1.5rem;
     }
 
     .brewery .txt{

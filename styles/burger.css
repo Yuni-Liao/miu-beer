@@ -1,9 +1,9 @@
 .burger-container{
     background-color: transparent;
-    width: 50px;
+    width: 40px;
     height: 40px;
-    padding: 4.5%;
-    right: -1%;
+    /* padding: 2.5%; */
+    right: 5%;
     top: 1%;
     border-radius: 25%;
     position: fixed;
@@ -99,10 +99,9 @@ header .menu-list a:hover{
         transform: scaleY(1);
     }
 
-
     @media screen and (max-width:1024px){
         .burger-container{
-            right: -3%;
-            top: -1%;
+            right: 2%;
+            top: 2%;
         }
     }
