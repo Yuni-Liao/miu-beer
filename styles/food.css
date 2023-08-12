@@ -310,6 +310,7 @@ h1 {
     position: relative;
     transform: perspective(1200) rotateY(0deg) translateX(0px);
     transition: 3s;
+    cursor: pointer;
 }
 
 
@@ -434,6 +435,7 @@ h1 {
         padding: 20px;
         font-size: 3rem;
         margin: 10px 0;
+        text-align: center;
     }
 
     /* 經典啤酒區 */
@@ -504,7 +506,7 @@ h1 {
     }
 
     .delicious-food .box .close-box{
-        top: 83%;
+        top: 68%;
         right: 48%;
     }
 }
@@ -514,9 +516,10 @@ h1 {
     }
     
     h1 {
-        padding: 20px;
-        font-size: 3rem;
+        padding: 5% 0;
+        font-size: 2.5rem;
         margin: 10px 0;
+        text-align: center;
     }
     
     /* 經典啤酒區 */

@@ -98,3 +98,11 @@ header .menu-list a:hover{
 #menu:checked ~ .menu-list {
         transform: scaleY(1);
     }
+
+
+    @media screen and (max-width:1024px){
+        .burger-container{
+            right: -3%;
+            top: -1%;
+        }
+    }

@@ -169,6 +169,11 @@
         min-width: 20%;
         margin: 10px;
     }
+
+    .box .close-box{
+        top: 59%;
+        right: 48%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -224,5 +229,12 @@
     .box .close-box{
         top: 60%;
         right: 45%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .news-card a span{
+        max-width: 100%;
+        bottom: 50%;
     }
 }
