@@ -1,7 +1,6 @@
 $(function () {
-    $('.news-card').click(function (e) {
-        e.preventDefault()
-        var content = $(this).find('span:last-child').html();
+    $('.news-card').click(function () {
+        var content = $(this).find('span:nth-child(3)').html();
         $('.box-content').html(content);
         $('.box').fadeIn();
     });
