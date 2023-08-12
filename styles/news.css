@@ -161,6 +161,15 @@
 
 
 /* RWD */
+@media screen and (max-width:1024px){
+
+    .news-card{
+        min-width: 20%;
+        overflow-y: hidden;
+        margin: 10px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .top h1 {
         padding: 20px;
@@ -175,7 +184,7 @@
     
     .news-card{
         min-width: 20%;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         margin: 10px;
     }
 
