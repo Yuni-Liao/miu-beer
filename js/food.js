@@ -7,7 +7,7 @@ function adjustLayout() {
     let buttonClicked = false
     if (window.innerWidth < 1024) {
         // 隱藏第一個以外的啤酒
-        for (var i = 1; i < beerItems.length; i++) {
+        for (let i = 1; i < beerItems.length; i++) {
             beerItems[i].style.display = 'none';
         }
         nextButton.addEventListener('click', function () {
@@ -26,7 +26,7 @@ function adjustLayout() {
 
                 setTimeout(() => {
                     buttonClicked = false;
-                }, 300)
+                }, 100)
             }
         });
 
@@ -47,7 +47,7 @@ function adjustLayout() {
                 beerItems[currentIndex].style.display = 'block';
                 setTimeout(() => {
                     buttonClicked = false;
-                }, 300)
+                }, 100)
             }
         });
     } else {

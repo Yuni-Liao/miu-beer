@@ -446,7 +446,8 @@ h1 {
     }
 
     .classic-beer .beer-container .beer .txt p{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 0;
     }
     /* 美味料理 */
 
@@ -534,7 +535,8 @@ h1 {
     }
 
     .classic-beer .beer-container .beer .txt p{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding: 0;
     }
     /* 美味料理 */
 
