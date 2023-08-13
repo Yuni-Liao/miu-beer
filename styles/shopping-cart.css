@@ -1,6 +1,5 @@
 /* 購物車內容區開始 */
 .cart-container{
-    /* background-color: #d9d9d9; */
     background-color: #C3C3D6;
     margin: 150px auto 10px;
     padding: 30px;
@@ -135,9 +134,15 @@
     margin-left: 60%;
 }
 
+.order-btn .fa-circle-plus,
+.order-btn .fa-circle-minus{
+    cursor: pointer;
+}
+
 .order-btn .fa-trash-can{
     font-size: 1rem;
     margin-left: 50%;
+    cursor: pointer;
 }
 /* 購物車內容區結束 */
 /* 表單區開始 */

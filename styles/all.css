@@ -51,6 +51,7 @@ header .shopping-cart a{
 header nav ul a:hover,
 header .shopping-cart a:hover{
     color: #b28850;
+    transition: .3s;
 }
 /* 選單結束 */
 /* 漢堡選單 */

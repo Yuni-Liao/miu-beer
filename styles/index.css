@@ -384,6 +384,7 @@
     }
 
     .brewery .txt{
+        min-width: 75%;
         font-size: 18px;
     }
 
