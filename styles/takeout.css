@@ -24,7 +24,6 @@
 #contentButton{
 	text-align: center;
 	width: 100%;
-	/* height: 50px; */
 }
 
 #contentButton li{
@@ -126,6 +125,11 @@
     text-align: right;
     min-width: 20%;
     align-self: center;
+}
+
+.food-card-container .card .btn .count .fa-circle-minus,
+.food-card-container .card .btn .count .fa-circle-plus{
+    cursor: pointer;
 }
 
 .food-card-container .card .btn .count .selectbox{
