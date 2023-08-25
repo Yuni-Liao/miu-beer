@@ -51,6 +51,7 @@
     text-align: center;
     position: relative;
     bottom: 17%;
+    line-height: 1.25;
 }
 
 .news-card:hover span{
